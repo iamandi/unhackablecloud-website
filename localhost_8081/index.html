@@ -274,6 +274,10 @@
 			font-weight: 400;
 			src: local('Zeyada'), url(wp-content/uploads/2019/04/11hAGpPTxVPUbgZzM2yq-1.woff) format('woff');
 		}
+
+		blink {
+			
+		}
 	</style>
 	<style type="text/css" data-type="vc_shortcodes-custom-css">
 		.vc_custom_1547726078063 {
@@ -459,8 +463,8 @@
 		transition: all 0.55s ease;
 		z-index: 9999;
 
-		/* font-size: 17px; */
-	font-weight: 400;
+		font-size: 17px;
+		font-weight: 400;
 		
 		margin: 0;
 		height: 30px;
@@ -478,9 +482,12 @@
 				<div class="hb-text-wrapper">
 					<div class="hb-headline-text">
 						<p>
-							<span
-								><strong>Important Announcement:</strong>  Beware of scammers. Investors and Donpia coin holders please read this announcement.</span
-							>
+							<span id="myBlinkingDiv" 
+							style="color: red;
+			font-size: 20px;
+			font-weight: bold;">
+				<strong>Important Announcement:</strong>  Beware of scammers. Investors and Donpia coin holders please read this announcement.
+			</span>
 						</p>
 					</div>
 				</div>
@@ -1477,20 +1484,23 @@
 				var down = document.querySelector(".hb-close-wrapper");
 				var el = document.getElementById('hellobar-bar');
 
-				console.log('----- hello world', down)
-				
-				// el.addEventListener('click', function () {
-				// 	var el2 = document.querySelector('.outer');
-				// 	el2.style.display = "none";
-				// });
-
 				down.addEventListener('click', function () {
-					console.log('----- button clicked')
-					//var el2 = document.querySelector('.outer');
 					el.style.display = "none";
 				});
 			</script>
+			<script type="text/javascript">
+        // var blink = document.getElementById('blink');
+        // setInterval(function() {
+        //     blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        // }, 1500);
 
+		
+var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+var t = setInterval(function () {
+    var ele = document.getElementById('myBlinkingDiv');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+    </script>
 
 
 
