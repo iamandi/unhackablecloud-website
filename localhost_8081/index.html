@@ -60,9 +60,9 @@
 			var g, h, i, j, k = b.createElement("canvas"),
 				l = k.getContext && k.getContext("2d");
 			for (j = Array("flag", "emoji"), c.supports = {
-					everything: !0,
-					everythingExceptFlag: !0
-				}, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c
+				everything: !0,
+				everythingExceptFlag: !0
+			}, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c
 				.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c
 					.supports[j[i]]);
 			c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c
@@ -74,7 +74,7 @@
 					.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
 						"complete" === b.readyState && c.readyCallback()
 					})), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g
-					.wpemoji)))
+						.wpemoji)))
 		}(window, document, window._wpemojiSettings);
 	</script>
 	<style type="text/css">
@@ -91,8 +91,8 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min3c21.css?ver=5.1.1'
-		type='text/css' media='all' />
+	<link rel='stylesheet' id='wp-block-library-css'
+		href='wp-includes/css/dist/block-library/style.min3c21.css?ver=5.1.1' type='text/css' media='all' />
 	<link rel='stylesheet' id='contact-form-7-css'
 		href='wp-content/plugins/contact-form-7/includes/css/styles3c21.css?ver=5.1.1' type='text/css' media='all' />
 	<link rel='stylesheet' id='siliconfolio-css'
@@ -105,8 +105,8 @@
 	<link rel='stylesheet' id='unibody-fonts-css'
 		href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%2C800%2C300italic%2C400italic%7CMontserrat%3A400%2C700%7CZeyada&amp;subset=latin%2Clatin-ext'
 		type='text/css' media='all' />
-	<link rel='stylesheet' id='unibody-style-css' href='wp-content/themes/unibody/style4b68.css?ver=1.0.4' type='text/css'
-		media='all' />
+	<link rel='stylesheet' id='unibody-style-css' href='wp-content/themes/unibody/style4b68.css?ver=1.0.4'
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='unibody-style-css-css'
 		href='wp-content/themes/unibody/assets/css/theme-style4b68.css?ver=1.0.4' type='text/css' media='all' />
 	<link rel='stylesheet' id='fontawesome-icons-css'
@@ -275,9 +275,7 @@
 			src: local('Zeyada'), url(wp-content/uploads/2019/04/11hAGpPTxVPUbgZzM2yq-1.woff) format('woff');
 		}
 
-		blink {
-			
-		}
+		blink {}
 	</style>
 	<style type="text/css" data-type="vc_shortcodes-custom-css">
 		.vc_custom_1547726078063 {
@@ -479,38 +477,30 @@
 		">
 
 		<div class="hb-content-wrapper">
-				<div class="hb-text-wrapper">
-					<div class="hb-headline-text">
-						<p>
-							<span id="myBlinkingDiv" 
-							style="color: red;
-			font-size: 20px;
-			font-weight: bold;">
-				<strong>Important Announcement:</strong>  Beware of scammers. Investors and Donpia coin holders please read this announcement.
-			</span>
-						</p>
-					</div>
+			<div class="hb-text-wrapper">
+				<div class="hb-headline-text">
+					<p>
+						<span id="myBlinkingDiv" style="color: red;
+							font-size: 20px;
+							font-weight: bold;">
+							<strong>Important Announcement:</strong> Beware of scammers. Investors and Donpia coin
+							holders please read this announcement.
+						</span>
+					</p>
 				</div>
-				<a
-					href="announcement.html"
-					class="hb-cta hb-cta-button"
-				>
-					<div class="hb-text-holder">
-						<p>Read more</p>
-					</div>
-				</a>
 			</div>
-			<div class="hb-close-wrapper">
-				<a
-					href="javascript:void(0);"
-					class="icon-close hb-close-button"
-					>&#10006;</a
-				>
-			</div>
+			<a href="announcement.html" class="hb-cta hb-cta-button">
+				<div class="hb-text-holder">
+					<p>Read more</p>
+				</div>
+			</a>
+		</div>
+		<div class="hb-close-wrapper">
+			<a href="javascript:void(0);" class="icon-close hb-close-button">&#10006;</a>
+		</div>
 	</div>
 
 	<div class="wrapper">
-
 		<div class="header">
 			<nav class="navbar navbar-wrap navbar-custom navbar-fixed-top menu-wrap">
 				<div class="container full">
@@ -518,16 +508,17 @@
 						<div class="col-lg-9 col-md-8 col-sm-6 col-xs-6 pull-right">
 							<div class="menu-center">
 								<div class="menu-responsive desktop">
-									<div class="collapse navbar-collapse navbar-main-collapse pull-left responsive-menu">
+									<div
+										class="collapse navbar-collapse navbar-main-collapse pull-left responsive-menu">
 										<ul id="menu-all-pages" class="nav navbar-nav">
 											<li
 												class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item">
 												<div class="logo">
 													<a href="#" title="CAT" rel="home">
-														<img src="wp-content/themes/unibody/assets/images/logo.png" style="height: 50px"
-															alt="cat-logo" class="logowhite">
-														<img src="wp-content/themes/unibody/assets/images/logo.png" style="height: 50px" alt="cat-logo"
-															class="logodark">
+														<img src="wp-content/themes/unibody/assets/images/logo.png"
+															style="height: 50px" alt="cat-logo" class="logowhite">
+														<img src="wp-content/themes/unibody/assets/images/logo.png"
+															style="height: 50px" alt="cat-logo" class="logodark">
 													</a>
 												</div>
 										</ul>
@@ -536,10 +527,10 @@
 								<div class="menu-responsive mobile">
 									<div class="logo">
 										<a href="#" title="CAT" rel="home">
-											<img src="wp-content/themes/unibody/assets/images/logo.png" style="height: 50px" alt="cat-logo"
-												class="logowhite">
-											<img src="wp-content/themes/unibody/assets/images/logo.png" style="height: 50px" alt="cat-logo"
-												class="logodark">
+											<img src="wp-content/themes/unibody/assets/images/logo.png"
+												style="height: 50px" alt="cat-logo" class="logowhite">
+											<img src="wp-content/themes/unibody/assets/images/logo.png"
+												style="height: 50px" alt="cat-logo" class="logodark">
 										</a>
 									</div>
 									<div class="burger_unibody_menu_overlay_normal">
@@ -560,19 +551,20 @@
 		</div>
 		<div class="main-content">
 			<div class="default_page">
-				<div class="container">					
+				<div class="container">
 					<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
 						class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
 						<div class="wpb_column vc_column_container vc_col-sm-12">
 							<div class="vc_column-inner">
 								<div class="wpb_wrapper">
-									<div data-background="wp-content/uploads/2019/04/screenshot.png"
-										class="intro full">
+									<div data-background="wp-content/uploads/2019/04/screenshot.png" class="intro full">
 										<div class="intro-body" style="text-align: center;">
-											<h2 style="font-family: Montserrat, sans-serif; line-height: 100px;  text-transform: uppercase;">
+											<h2
+												style="font-family: Montserrat, sans-serif; line-height: 100px;  text-transform: uppercase;">
 												future of the internet is
 											</h2>
-											<h1 style="font-size: 100px; font-family: Montserrat, sans-serif; line-height: 100px; font-weight: normal; text-transform: uppercase;">
+											<h1
+												style="font-size: 100px; font-family: Montserrat, sans-serif; line-height: 100px; font-weight: normal; text-transform: uppercase;">
 												HERE
 											</h1>
 											<div data-wow-delay="1s" class="scroll-btn fadeInDown animated"
@@ -580,8 +572,10 @@
 												<a class="page-scroll" href="#about" style=" text-align: center;">
 													<span class="mouse" style=" text-align: center;">
 														<span style=" text-align: center;">
-															<i class="icon ion-ios-arrow-down" style="font-size: 80px; margin-left: 0em;"></i>
-															<i class="icon ion-ios-arrow-down" style="font-size: 80px; margin-left: 0em;"></i>
+															<i class="icon ion-ios-arrow-down"
+																style="font-size: 80px; margin-left: 0em;"></i>
+															<i class="icon ion-ios-arrow-down"
+																style="font-size: 80px; margin-left: 0em;"></i>
 														</span>
 													</span>
 												</a>
@@ -613,7 +607,7 @@
 													$(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
 												}
 											});
-											function buildModuleHeader(introHeader) {};
+											function buildModuleHeader(introHeader) { };
 
 											function effectsModuleHeader(introHeader, scrollTopp) {
 												if (introHeader.length > 0) {
@@ -646,10 +640,14 @@
 													<div class="promo-block center ">
 														<p class="no-pad small">EST.2013</p>
 														<h3 class="">Who We Are</h3>
-														<p>Cyber Advance Technology - CAT is the culmination of eleven years of: technological
-															innovation, industrial proofs of concept, and pioneering research and development. As a
-															result, we are proud to have created a unique innovative pathway, with the highest
-															industrial engineering standards. Performance, reliability, strength, safety, and security
+														<p>Cyber Advance Technology - CAT is the culmination of eleven
+															years of: technological
+															innovation, industrial proofs of concept, and pioneering
+															research and development. As a
+															result, we are proud to have created a unique innovative
+															pathway, with the highest
+															industrial engineering standards. Performance, reliability,
+															strength, safety, and security
 															are innate underpinnings of Cyber Advanced Technologies.</p>
 														<h2 class="classic">The CAT Team</h2>
 													</div>
@@ -672,17 +670,21 @@
 												<div class="item">
 													<div class="container-fluid bg-gray no-pad">
 														<div class="row">
-															<div class="col-lg-6 carousel-item"><img class="img-responsive center-block"
-																	src="wp-content/uploads/2019/04/THISONE-1.png" alt=""></div>
+															<div class="col-lg-6 carousel-item"><img
+																	class="img-responsive center-block"
+																	src="wp-content/uploads/2019/04/THISONE-1.png"
+																	alt=""></div>
 															<div class="col-lg-3 col-lg-offset-1 carousel-item-text">
 																<h3>In Seoul, Korea</h3>
-																<p>CAT team as part of Seoul Korean Hackathon with other Korean Dignitaries</p>
+																<p>CAT team as part of Seoul Korean Hackathon with other
+																	Korean Dignitaries</p>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div><a class="left carousel-control" href="#carousel-light" data-slide="prev"><span
-													class="icon-prev"></span></a><a class="right carousel-control" href="#carousel-light"
+											</div><a class="left carousel-control" href="#carousel-light"
+												data-slide="prev"><span class="icon-prev"></span></a><a
+												class="right carousel-control" href="#carousel-light"
 												data-slide="next"><span class="icon-next"></span></a>
 										</div>
 									</div>
@@ -691,7 +693,7 @@
 						</div>
 					</div>
 					<div class="vc_row-full-width vc_clearfix"></div>
-				
+
 
 					<div
 						class="vc_row wpb_row vc_row-fluid wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp vc_custom_1509301593430">
@@ -715,8 +717,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode  fadeIn" data-wow-delay="100ms">
 														<div class="text-center ">
-															<h4><i class="hi-icon ion-ios-flask-outline"></i>Creators of OT-OCN</h4>
-															<p>We can build OTOCN paradigm to the needs of your organization</p>
+															<h4><i class="hi-icon ion-ios-flask-outline"></i>Creators of
+																OT-OCN</h4>
+															<p>We can build OTOCN paradigm to the needs of your
+																organization</p>
 														</div>
 													</div>
 												</div>
@@ -727,8 +731,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode  fadeIn" data-wow-delay="100ms">
 														<div class="text-center ">
-															<h4><i class="hi-icon ion-ios-people-outline"></i>People Centric</h4>
-															<p>You can partner with us to build secure and scalable apps in the OT-OCN paradigm.</p>
+															<h4><i class="hi-icon ion-ios-people-outline"></i>People
+																Centric</h4>
+															<p>You can partner with us to build secure and scalable apps
+																in the OT-OCN paradigm.</p>
 														</div>
 													</div>
 												</div>
@@ -739,8 +745,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode  fadeIn" data-wow-delay="100ms">
 														<div class="text-center ">
-															<h4><i class="hi-icon ion-ios-unlocked-outline"></i>Data Security</h4>
-															<p>We can secure your data, services and users from unwarranted cyber attacks.</p>
+															<h4><i class="hi-icon ion-ios-unlocked-outline"></i>Data
+																Security</h4>
+															<p>We can secure your data, services and users from
+																unwarranted cyber attacks.</p>
 														</div>
 													</div>
 												</div>
@@ -751,7 +759,9 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode  fadeIn" data-wow-delay="100ms">
 														<div class="text-center ">
-															<h4><i class="hi-icon ion-social-javascript-outline"></i>Developer Friendly</h4>
+															<h4><i
+																	class="hi-icon ion-social-javascript-outline"></i>Developer
+																Friendly</h4>
 															<p>Learn OT-OCN and be the part of the future.</p>
 														</div>
 													</div>
@@ -775,7 +785,8 @@
 												<div class="wpb_wrapper">
 													<div class="video-block white">
 														<a href="https://www.youtube.com/watch?v=TFIHFPBNuj8&amp;autoplay=1"
-															class="swipebox-video"><span><i class="icon icon-big ion-ios-play-outline"></i></span></a>
+															class="swipebox-video"><span><i
+																	class="icon icon-big ion-ios-play-outline"></i></span></a>
 														<h2>Check out our brand new BBS E-Wallet</h2>
 														<h5></h5>
 													</div>
@@ -798,27 +809,33 @@
 											<div class="vc_column-inner vc_custom_1529083683209">
 												<div class="wpb_wrapper">
 													<div class="wow zoomIn" data-wow-delay="200ms">
-														<div style="margin: -130px 0 0 0;" class="unibody_owl_slider owl-carousel " data-dots="true"
+														<div style="margin: -130px 0 0 0;"
+															class="unibody_owl_slider owl-carousel " data-dots="true"
 															id="watch">
 															<img width="554" height="670"
 																src="wp-content/uploads/2019/04/anubis2-e1555144666249-554x670.jpg"
-																class="attachment-img-responsive logos size-img-responsive logos" alt=""
-																srcset="wp-content/uploads/2019/04/anubis2-e1555144666249-554x670.jpeg 554w, 
+																class="attachment-img-responsive logos size-img-responsive logos"
+																alt="" srcset="wp-content/uploads/2019/04/anubis2-e1555144666249-554x670.jpeg 554w, 
 																	wp-content/uploads/2019/04/anubis2-e1555144666249-554x670-248x300.jpeg 248w"
 																sizes="(max-width: 554px) 100vw, 554px" />
 														</div>
 													</div>
 													<div class="promo-block  ">
 														<h3 class="">Anubis</h3>
-														<p>Impenetrable and uninterruptible single unit in a rack mount architecture for the
+														<p>Impenetrable and uninterruptible single unit in a rack mount
+															architecture for the
 															corporate cyber security arena.
-															Anubis is a hardware device that interfaces between a corporate network and the
+															Anubis is a hardware device that interfaces between a
+															corporate network and the
 															internet.
-															Anubis is a stand-alone cyber security system that allows for uninterruptible IT
+															Anubis is a stand-alone cyber security system that allows
+															for uninterruptible IT
 															operations services.
-															Anubis supports and collaborates with existing IT systems, to disable malicious attacks
+															Anubis supports and collaborates with existing IT systems,
+															to disable malicious attacks
 															without causing any disruption to IT Operations.
-															Some target markets – Financial Institutions, Government, Healthcare, Infrastructure, etc.
+															Some target markets – Financial Institutions, Government,
+															Healthcare, Infrastructure, etc.
 														</p>
 													</div>
 													<script>
@@ -832,7 +849,7 @@
 																animateIn: "fadeIn",
 																animateOut: "fadeOut",
 																autoplayTimeout: 5000,
-																navText: [, ],
+																navText: [,],
 																responsive: {
 																	0: {
 																		margin: 0,
@@ -859,7 +876,7 @@
 														});
 													</script>
 
-													
+
 												</div>
 											</div>
 										</div>
@@ -869,18 +886,21 @@
 												<div class="wpb_wrapper">
 													<div class="promo-block  ">
 														<h3 class="">BBS</h3>
-														<p>OT-OCN small office/home office USB is a portable solution to protect any device
+														<p>OT-OCN small office/home office USB is a portable solution to
+															protect any device
 															utilizing.
 															OT-OCN impenetrable and uninterruptible cloud technology.
-															OT-OCN BBS-USB-7 is intended for the individual user at home or in a small office.
-															Easy and convenient impenetrable and uninterruptible protection.</p>
+															OT-OCN BBS-USB-7 is intended for the individual user at home
+															or in a small office.
+															Easy and convenient impenetrable and uninterruptible
+															protection.</p>
 													</div>
 													<div class="wow zoomIn" data-wow-delay="100ms">
-														<div style="margin: 0;" class="unibody_owl_slider owl-carousel " data-dots="true"
-															id="bbs_id"><img width="995" height="1020"
+														<div style="margin: 0;" class="unibody_owl_slider owl-carousel "
+															data-dots="true" id="bbs_id"><img width="995" height="1020"
 																src="wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301.jpg"
-																class="attachment-img-responsive logos size-img-responsive logos" alt=""
-																srcset="wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301.jpeg 995w, 
+																class="attachment-img-responsive logos size-img-responsive logos"
+																alt="" srcset="wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301.jpeg 995w, 
 																	wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301-293x300.jpeg 293w, 
 																	wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301-768x787.jpeg 768w, 
 																	wp-content/uploads/2019/04/WhatsApp-Image-2018-12-18-at-00.29.23-e1555144753301-680x697.jpeg 680w"
@@ -897,7 +917,7 @@
 																animateIn: "fadeIn",
 																animateOut: "fadeOut",
 																autoplayTimeout: 5000,
-																navText: [, ],
+																navText: [,],
 																responsive: {
 																	0: {
 																		margin: 0,
@@ -931,7 +951,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="vc_row-full-width vc_clearfix"></div>
 					<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="2.5"
 						data-vc-parallax-image="wp-content/uploads/2017/10/parallax-1-2.jpg"
@@ -946,9 +966,12 @@
 												<div class="wpb_wrapper">
 													<div class="promo-block center white">
 														<h3 class="">OT-OCN</h3>
-														<p>OT-OCN is the NEXT GENERATION internet architecture . Operational Technology- Operational
-															Centric Network. This groundbreaking architecture resolves the flaws weaknesses in
-															internet protocol (TCP/IP). It co-exists simultaneously and transparently with the
+														<p>OT-OCN is the NEXT GENERATION internet architecture .
+															Operational Technology- Operational
+															Centric Network. This groundbreaking architecture resolves
+															the flaws weaknesses in
+															internet protocol (TCP/IP). It co-exists simultaneously and
+															transparently with the
 															current- older TCP/IP paradigm.</p>
 													</div>
 												</div>
@@ -961,8 +984,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="200ms">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-bolt-outline"></i>Fast and Scalable</h4>
-															<p>Name driven Content delivery paradigm makes extremely fast and scalable</p>
+															<h4><i class="hi-icon ion-ios-bolt-outline"></i>Fast and
+																Scalable</h4>
+															<p>Name driven Content delivery paradigm makes extremely
+																fast and scalable</p>
 														</div>
 													</div>
 												</div>
@@ -973,8 +998,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="400ms">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-locked-outline"></i>Secure</h4>
-															<p>Data security and reliability through the decentralized architecture secured by
+															<h4><i class="hi-icon ion-ios-locked-outline"></i>Secure
+															</h4>
+															<p>Data security and reliability through the decentralized
+																architecture secured by
 																hardware and software</p>
 														</div>
 													</div>
@@ -986,8 +1013,11 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="600ms">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-lightbulb-outline"></i>Paradigm Shift</h4>
-															<p>OT-OCN is name driven which is set to replace existing IP driven paradigm</p>
+															<h4><i
+																	class="hi-icon ion-ios-lightbulb-outline"></i>Paradigm
+																Shift</h4>
+															<p>OT-OCN is name driven which is set to replace existing IP
+																driven paradigm</p>
 														</div>
 													</div>
 												</div>
@@ -998,8 +1028,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="800ms">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-code-working"></i>Customizable</h4>
-															<p>Highly customizable to the needs of the developers and user</p>
+															<h4><i class="hi-icon ion-code-working"></i>Customizable
+															</h4>
+															<p>Highly customizable to the needs of the developers and
+																user</p>
 														</div>
 													</div>
 												</div>
@@ -1012,8 +1044,11 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="1s">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-infinite-outline"></i>End-to-End</h4>
-															<p>End-to-End security is provided through application, session and transport level
+															<h4><i
+																	class="hi-icon ion-ios-infinite-outline"></i>End-to-End
+															</h4>
+															<p>End-to-End security is provided through application,
+																session and transport level
 																security</p>
 														</div>
 													</div>
@@ -1025,8 +1060,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="1.2s">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-stopwatch-outline"></i>Real Time</h4>
-															<p>Best suited for real time applications in the era of Industrial Internet Of Things</p>
+															<h4><i class="hi-icon ion-ios-stopwatch-outline"></i>Real
+																Time</h4>
+															<p>Best suited for real time applications in the era of
+																Industrial Internet Of Things</p>
 														</div>
 													</div>
 												</div>
@@ -1037,8 +1074,10 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="1.4s">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-ios-monitor-outline"></i>Intrusion Prevention</h4>
-															<p>Control over all aspects of the cloud make it not only Intrusion Protection but also
+															<h4><i class="hi-icon ion-ios-monitor-outline"></i>Intrusion
+																Prevention</h4>
+															<p>Control over all aspects of the cloud make it not only
+																Intrusion Protection but also
 																Prevention ready</p>
 														</div>
 													</div>
@@ -1050,8 +1089,11 @@
 												<div class="wpb_wrapper">
 													<div class="services-shortcode wow fadeIn" data-wow-delay="1.6s">
 														<div class="text-center white">
-															<h4><i class="hi-icon ion-social-bitcoin-outline"></i>Blockchain Ready</h4>
-															<p>The content authenticity and distribution model makes it blockchain ready</p>
+															<h4><i
+																	class="hi-icon ion-social-bitcoin-outline"></i>Blockchain
+																Ready</h4>
+															<p>The content authenticity and distribution model makes it
+																blockchain ready</p>
 														</div>
 													</div>
 												</div>
@@ -1071,7 +1113,8 @@
 								<div class="wpb_wrapper">
 
 									<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1556611694327">
-										<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+										<div
+											class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper">
 													<div class="portfolio-item" style="height:320px; ">
@@ -1095,7 +1138,8 @@
 												</div>
 											</div>
 										</div>
-										<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+										<div
+											class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper">
 													<div class="portfolio-item" style="height:320px; ">
@@ -1108,8 +1152,9 @@
 														</a>
 													</div>
 													<div class="portfolio-item" style="height:320px; ">
-														<div style="background:url(wp-content/uploads/2019/04/gandhi-award.jpg)"></div><a
-															href="index104b.html" class="portfolio-overlay">
+														<div
+															style="background:url(wp-content/uploads/2019/04/gandhi-award.jpg)">
+														</div><a href="index104b.html" class="portfolio-overlay">
 															<div class="caption">
 																<h5>MK Gandhi Peace Prize winner 2019</h5>
 															</div>
@@ -1118,7 +1163,8 @@
 												</div>
 											</div>
 										</div>
-										<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+										<div
+											class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper">
 													<div class="portfolio-item" style="height:640px; ">
@@ -1133,12 +1179,14 @@
 												</div>
 											</div>
 										</div>
-										<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+										<div
+											class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper">
 													<div class="portfolio-item" style="height:640px;">
-														<div style="background:url(wp-content/uploads/2019/04/eForensics.jpg)"></div><a
-															href="index71cf.html" class="portfolio-overlay">
+														<div
+															style="background:url(wp-content/uploads/2019/04/eForensics.jpg)">
+														</div><a href="index71cf.html" class="portfolio-overlay">
 															<div class="caption">
 																<h5>eForensics magazine cover story</h5>
 															</div>
@@ -1153,8 +1201,7 @@
 						</div>
 					</div>
 					<div class="vc_row-full-width vc_clearfix"></div>
-					<div
-						style="padding: 0;"
+					<div style="padding: 0;"
 						class="vc_row wpb_row vc_row-fluid wpb_animate_when_almost_visible wpb_fadeIn fadeIn vc_custom_1509301964754">
 						<div class="wpb_column vc_column_container vc_col-sm-12">
 							<div class="vc_column-inner">
@@ -1171,16 +1218,18 @@
 											</div>
 										</div>
 									</div>
-									<div class="vc_row wpb_row vc_inner vc_row-fluid" style="display: flex; justify-content: center;">
+									<div class="vc_row wpb_row vc_inner vc_row-fluid"
+										style="display: flex; justify-content: center;">
 										<div class="wpb_column vc_column_container vc_col-sm-3">
 											<div class="vc_column-inner">
 												<div class="wpb_wrapper">
 													<div class="text-center">
 														<a target="_blank" href="https://cryptocat.app">
-														<p style="padding: 0; margin: 0;"><img width="112" src="wp-content/uploads/2019/04/cryptocat.svg"
-																class="attachment-img-responsive center-block size-img-responsive center-block"
-																alt="" /></p>
-																</a>
+															<p style="padding: 0; margin: 0;"><img width="112"
+																	src="wp-content/uploads/2019/04/cryptocat.svg"
+																	class="attachment-img-responsive center-block size-img-responsive center-block"
+																	alt="" /></p>
+														</a>
 													</div>
 												</div>
 											</div>
@@ -1190,8 +1239,8 @@
 							</div>
 						</div>
 					</div>
-					
-					
+
+
 					<div class="vc_row-full-width vc_clearfix"></div>
 					<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
 						data-vc-parallax-image="wp-content/uploads/2017/10/20-1-2.jpg"
@@ -1206,8 +1255,10 @@
 													<div class="stats-universal">
 														<div class="stats-block stats-top">
 															<div class="stats-desc white">
-																<div class="stats-number number-counter"><span data-min="0" data-max="4" data-delay="1"
-																		data-increment="1" class="numscroller">0</span></div>
+																<div class="stats-number number-counter"><span
+																		data-min="0" data-max="4" data-delay="1"
+																		data-increment="1" class="numscroller">0</span>
+																</div>
 																<h5 class="no-pad">Presence in Countries</h5>
 															</div>
 														</div>
@@ -1221,8 +1272,10 @@
 													<div class="stats-universal">
 														<div class="stats-block stats-top">
 															<div class="stats-desc white">
-																<div class="stats-number number-counter"><span data-min="0" data-max="9" data-delay="1"
-																		data-increment="3" class="numscroller">0</span></div>
+																<div class="stats-number number-counter"><span
+																		data-min="0" data-max="9" data-delay="1"
+																		data-increment="3" class="numscroller">0</span>
+																</div>
 																<h5 class="no-pad">Part of Global Hackathons</h5>
 															</div>
 														</div>
@@ -1236,8 +1289,10 @@
 													<div class="stats-universal">
 														<div class="stats-block stats-top">
 															<div class="stats-desc white">
-																<div class="stats-number number-counter"><span data-min="0" data-max="6" data-delay="1"
-																		data-increment="1" class="numscroller">0</span></div>
+																<div class="stats-number number-counter"><span
+																		data-min="0" data-max="6" data-delay="1"
+																		data-increment="1" class="numscroller">0</span>
+																</div>
 																<h5 class="no-pad">Projects Delivered</h5>
 															</div>
 														</div>
@@ -1251,8 +1306,10 @@
 													<div class="stats-universal">
 														<div class="stats-block stats-top">
 															<div class="stats-desc white">
-																<div class="stats-number number-counter"><span data-min="0" data-max="12" data-delay="1"
-																		data-increment="1" class="numscroller">0</span></div>
+																<div class="stats-number number-counter"><span
+																		data-min="0" data-max="12" data-delay="1"
+																		data-increment="1" class="numscroller">0</span>
+																</div>
 																<h5 class="no-pad">Products Launched</h5>
 															</div>
 														</div>
@@ -1266,302 +1323,322 @@
 						</div>
 					</div>
 					<div class="vc_row-full-width vc_clearfix"></div>
-					
+
 					<div id="contact" class="vc_row wpb_row vc_row-fluid vc_custom_1528553796976">
 						<div class="wpb_column vc_column_container vc_col-sm-12">
 							<div class="vc_column-inner">
 								<div class="vc_row wpb_row vc_inner vc_row-fluid">
 									<div
-									class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-5 vc_col-md-offset-0 vc_col-md-6 vc_col-xs-12">
-									<div class="vc_column-inner">
-										<div class="wpb_wrapper">
-											<div class="">
-												<h3>Feel free to contact us</h3>
-												<h5><i class="fas fa-phone fa-fw fa-lg rotate-180"></i> <a href="tel:(510)542-0640">(510)
-														542-0640</a></h5>
-												<h5><i class="fas fa-at fa-fw fa-lg"></i>info@unhackablecloud.com</h5>
-												<h5><i class="fas fa-map-marker-alt fa-fw fa-lg"></i> 5627 Telegraph Ave, Suite 555, Oakland, CA 94609
-												</h5>
+										class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-5 vc_col-md-offset-0 vc_col-md-6 vc_col-xs-12">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="">
+													<h3>Feel free to contact us</h3>
+													<h5><i class="fas fa-phone fa-fw fa-lg rotate-180"></i> <a
+															href="tel:(510)542-0640">(510)
+															542-0640</a></h5>
+													<h5><i class="fas fa-at fa-fw fa-lg"></i>info@unhackablecloud.com
+													</h5>
+													<h5><i class="fas fa-map-marker-alt fa-fw fa-lg"></i> 5627 Telegraph
+														Ave, Suite 555, Oakland, CA 94609
+													</h5>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
-						class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
-						<div class="wpb_column vc_column_container vc_col-sm-12">
-							<div class="vc_column-inner">
-								<div class="wpb_wrapper">
-									<div id="map" style="height:430px"></div>
-									<script type="text/javascript"
-										src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwW10C7bQTFSIsGNVCSimg3FghHeljkfw"></script>
-									<script>
-										var geocoder;
-										var map;
-										var marker;
-										var address = "5627 Telegraph Ave, Oakland, CA 94609";
+						<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
+							class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner">
+									<div class="wpb_wrapper">
+										<div id="map" style="height:430px"></div>
+										<script type="text/javascript"
+											src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwW10C7bQTFSIsGNVCSimg3FghHeljkfw"></script>
+										<script>
+											var geocoder;
+											var map;
+											var marker;
+											var address = "5627 Telegraph Ave, Oakland, CA 94609";
 
-										function initialize() {
-											geocoder = new google.maps.Geocoder();
-											var latlng = new google.maps.LatLng(-34.397, 150.644);
+											function initialize() {
+												geocoder = new google.maps.Geocoder();
+												var latlng = new google.maps.LatLng(-34.397, 150.644);
 
-											var myOptions = {
-												zoom: 16,
-												center: latlng,
-												disableDefaultUI: true,
-												scrollwheel: false,
-												draggable: false,
-												styles: [{
-													"stylers": [{
-														"saturation": -100
+												var myOptions = {
+													zoom: 16,
+													center: latlng,
+													disableDefaultUI: true,
+													scrollwheel: false,
+													draggable: false,
+													styles: [{
+														"stylers": [{
+															"saturation": -100
+														}, {
+															"gamma": 1
+														}]
 													}, {
-														"gamma": 1
-													}]
-												}, {
-													"elementType": "labels.text.stroke",
-													"stylers": [{
-														"visibility": "off"
-													}]
-												}, {
-													"featureType": "poi.business",
-													"elementType": "labels.text",
-													"stylers": [{
-														"visibility": "off"
-													}]
-												}, {
-													"featureType": "poi.business",
-													"elementType": "labels.icon",
-													"stylers": [{
-														"visibility": "off"
-													}]
-												}, {
-													"featureType": "poi.place_of_worship",
-													"elementType": "labels.text",
-													"stylers": [{
-														"visibility": "off"
-													}]
-												}, {
-													"featureType": "poi.place_of_worship",
-													"elementType": "labels.icon",
-													"stylers": [{
-														"visibility": "off"
-													}]
-												}, {
-													"featureType": "road",
-													"elementType": "geometry",
-													"stylers": [{
-														"visibility": "simplified"
-													}]
-												}, {
-													"featureType": "water",
-													"stylers": [{
-														"visibility": "on"
+														"elementType": "labels.text.stroke",
+														"stylers": [{
+															"visibility": "off"
+														}]
 													}, {
-														"saturation": -35
+														"featureType": "poi.business",
+														"elementType": "labels.text",
+														"stylers": [{
+															"visibility": "off"
+														}]
 													}, {
-														"gamma": 8
+														"featureType": "poi.business",
+														"elementType": "labels.icon",
+														"stylers": [{
+															"visibility": "off"
+														}]
 													}, {
-														"hue": "#f7f7f7"
-													}]
-												}, {
-													"featureType": "administrative.neighborhood",
-													"elementType": "labels.text.fill",
-													"stylers": [{
-														"color": "#333333"
-													}]
-												}, {
-													"featureType": "road.local",
-													"elementType": "labels.text",
-													"stylers": [{
-														"weight": 0.5
+														"featureType": "poi.place_of_worship",
+														"elementType": "labels.text",
+														"stylers": [{
+															"visibility": "off"
+														}]
 													}, {
-														"color": "#333333"
-													}]
-												}, {
-													"featureType": "transit.station",
-													"elementType": "labels.icon",
-													"stylers": [{
-														"hue": "#0008ff"
+														"featureType": "poi.place_of_worship",
+														"elementType": "labels.icon",
+														"stylers": [{
+															"visibility": "off"
+														}]
 													}, {
-														"lightness": "8"
+														"featureType": "road",
+														"elementType": "geometry",
+														"stylers": [{
+															"visibility": "simplified"
+														}]
 													}, {
-														"saturation": "-20"
-													}]
-												}],
-												mapTypeControl: false,
-												mapTypeControlOptions: {
-													style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-												},
-												navigationControl: false,
-												mapTypeId: google.maps.MapTypeId.ROADMAP
-											};
+														"featureType": "water",
+														"stylers": [{
+															"visibility": "on"
+														}, {
+															"saturation": -35
+														}, {
+															"gamma": 8
+														}, {
+															"hue": "#f7f7f7"
+														}]
+													}, {
+														"featureType": "administrative.neighborhood",
+														"elementType": "labels.text.fill",
+														"stylers": [{
+															"color": "#333333"
+														}]
+													}, {
+														"featureType": "road.local",
+														"elementType": "labels.text",
+														"stylers": [{
+															"weight": 0.5
+														}, {
+															"color": "#333333"
+														}]
+													}, {
+														"featureType": "transit.station",
+														"elementType": "labels.icon",
+														"stylers": [{
+															"hue": "#0008ff"
+														}, {
+															"lightness": "8"
+														}, {
+															"saturation": "-20"
+														}]
+													}],
+													mapTypeControl: false,
+													mapTypeControlOptions: {
+														style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+													},
+													navigationControl: false,
+													mapTypeId: google.maps.MapTypeId.ROADMAP
+												};
 
-											map = new google.maps.Map(document.getElementById("map"), myOptions);
+												map = new google.maps.Map(document.getElementById("map"), myOptions);
 
-											if (geocoder) {
-												geocoder.geocode({
-													"address": address
-												}, function (results, status) {
-													if (status == google.maps.GeocoderStatus.OK) {
-														if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
-															map.setCenter(results[0].geometry.location);
+												if (geocoder) {
+													geocoder.geocode({
+														"address": address
+													}, function (results, status) {
+														if (status == google.maps.GeocoderStatus.OK) {
+															if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+																map.setCenter(results[0].geometry.location);
 
-															var infowindow = new google.maps.InfoWindow({
-																content: "<b>" + address + "</b>",
-																size: new google.maps.Size(150, 50)
-															});
+																var infowindow = new google.maps.InfoWindow({
+																	content: "<b>" + address + "</b>",
+																	size: new google.maps.Size(150, 50)
+																});
 
-															var marker = new google.maps.Marker({
-																position: results[0].geometry.location,
-																map: map,
-																icon: "wp-content/themes/unibody/assets/images/map-marker.png",
-																title: address
-															});
-															google.maps.event.addListener(marker, "click", function () {
-																infowindow.open(map, marker);
-															});
+																var marker = new google.maps.Marker({
+																	position: results[0].geometry.location,
+																	map: map,
+																	icon: "wp-content/themes/unibody/assets/images/map-marker.png",
+																	title: address
+																});
+																google.maps.event.addListener(marker, "click", function () {
+																	infowindow.open(map, marker);
+																});
+															} else {
+																alert("No results found");
+															}
 														} else {
-															alert("No results found");
+															alert("Geocode was not successful for the following reason: " + status);
 														}
-													} else {
-														alert("Geocode was not successful for the following reason: " + status);
-													}
-												});
-											}
-										};
-										google.maps.event.addDomListener(window, "load", initialize);
-									</script>
-								</div>
-							</div>
-						</div>
-					</div>					
-					<div class="vc_row-full-width vc_clearfix"></div>
-				</div>
-			</div>
-			<footer>
-				<div class="footer">
-					<div class="footer-copyright grey">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 two-block">
-									<div class="copyright-info">
-										<h6>© 2021 CAT, Inc. All right reserved.</h6>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 two-block">
-									<div class="love-info text-right">
-										<h6></h6>
+													});
+												}
+											};
+											google.maps.event.addDomListener(window, "load", initialize);
+										</script>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="vc_row-full-width vc_clearfix"></div>
 					</div>
-					
-
 				</div>
-			</footer>
-			<!--</div> </div>-->
-			<link rel='stylesheet' id='animate-css-css'
-				href='wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.mine23c.css?ver=5.7' type='text/css'
-				media='all' />
-			<script type='text/javascript'>
-				/* <![CDATA[ */
-				var wpcf7 = {
-					"apiSettings": {
-						"root": "http:\/\/localhost:8081\/index.php?rest_route=\/contact-form-7\/v1",
-						"namespace": "contact-form-7\/v1"
-					}
-				};
+				<footer>
+					<div class="footer">
+						<div class="footer-copyright grey">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 two-block">
+										<div class="copyright-info">
+											<h6>© 2021 CAT, Inc. All right reserved.</h6>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 two-block">
+										<div class="love-info text-right">
+											<h6></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</footer>
+				<!--</div> </div>-->
+				<link rel='stylesheet' id='animate-css-css'
+					href='wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.mine23c.css?ver=5.7'
+					type='text/css' media='all' />
+				<script type='text/javascript'>
+					/* <![CDATA[ */
+					var wpcf7 = {
+						"apiSettings": {
+							"root": "http:\/\/localhost:8081\/index.php?rest_route=\/contact-form-7\/v1",
+							"namespace": "contact-form-7\/v1"
+						}
+					};
 				/* ]]> */
-			</script>
+				</script>
 
 
 
 
-			<script>
-				var down = document.querySelector(".hb-close-wrapper");
-				var el = document.getElementById('hellobar-bar');
+				<script>
+					var down = document.querySelector(".hb-close-wrapper");
+					var el = document.getElementById('hellobar-bar');
 
-				down.addEventListener('click', function () {
-					el.style.display = "none";
-				});
-			</script>
-			<script type="text/javascript">
-        // var blink = document.getElementById('blink');
-        // setInterval(function() {
-        //     blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
-        // }, 1500);
-
-		
-var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
-var t = setInterval(function () {
-    var ele = document.getElementById('myBlinkingDiv');
-    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, blink_speed);
-    </script>
+					down.addEventListener('click', function () {
+						el.style.display = "none";
+					});
+				</script>
+				<script type="text/javascript">
+					// var blink = document.getElementById('blink');
+					// setInterval(function() {
+					//     blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+					// }, 1500);
 
 
+					var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+					var t = setInterval(function () {
+						var ele = document.getElementById('myBlinkingDiv');
+						ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+					}, blink_speed);
+				</script>
 
-			
-			<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts3c21.js?ver=5.1.1'>
-			</script>
-			<script type='text/javascript'>
-				/* <![CDATA[ */
-				var st_sf_theme_plugin = {
-					"theme_url": "http:\/\/localhost:8081\/wp-content\/plugins\/unibody-plugins\/portfolio\/",
-					"ajax_url": "http:\/\/localhost:8081\/wp-admin\/admin-ajax.php"
-				};
+
+
+
+				<script type='text/javascript'
+					src='wp-content/plugins/contact-form-7/includes/js/scripts3c21.js?ver=5.1.1'>
+					</script>
+				<script type='text/javascript'>
+					/* <![CDATA[ */
+					var st_sf_theme_plugin = {
+						"theme_url": "http:\/\/localhost:8081\/wp-content\/plugins\/unibody-plugins\/portfolio\/",
+						"ajax_url": "http:\/\/localhost:8081\/wp-admin\/admin-ajax.php"
+					};
 				/* ]]> */
-			</script>
-			<script type='text/javascript'
-				src='wp-content/plugins/unibody-plugins/portfolio/framework/js/custom_plugin8a54.js?ver=1.0.0'></script>
-			<script type='text/javascript'
-				src='wp-content/plugins/unibody-plugins/portfolio/framework/js/jquery.waitforimages8a54.js?ver=1.0.0'></script>
-			<script type='text/javascript'
-				src='wp-content/plugins/unibody-plugins/portfolio/framework/js/isotope.pkgd.min8a54.js?ver=1.0.0'></script>
-			<script type='text/javascript'
-				src='wp-content/plugins/unibody-plugins/portfolio/framework/js/imagesloaded8a54.js?ver=1.0.0'></script>
-			<script type='text/javascript' src='wp-content/plugins/unibody-plugins/shortcodes/vc_extend/vc_custom.js'>
-			</script>
-			<script type='text/javascript' src='wp-content/plugins/unibody-plugins/shortcodes/vc_extend/classie.js'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/bootstrap.min4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/viewportchecker4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.fitvids4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.smartmenus4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/wow.min4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.swipebox.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/isotope.pkgd.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/vegas.min4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/text-rotator.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript'
-				src='wp-content/themes/unibody/assets/js/jquery.circle-progress.min4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.easing.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript'
-				src='wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.mine23c.js?ver=5.7'></script>
-			<script type='text/javascript' src='wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
-			<script type='text/javascript'
-				src='wp-content/themes/unibody/assets/js/jquery.malihu.PageScroll2id4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.countdown.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/jquery.mb.YTPlayer.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/owl.carousel.min4b68.js?ver=1.0.4'>
-			</script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/retina.min4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-content/themes/unibody/assets/js/main4b68.js?ver=1.0.4'></script>
-			<script type='text/javascript' src='wp-includes/js/wp-embed.min3c21.js?ver=5.1.1'></script>
-			<script type='text/javascript'
-				src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mine23c.js?ver=5.7'></script>
-			<script type='text/javascript'
-				src='wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.mine23c.js?ver=5.7'></script>
+				</script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/portfolio/framework/js/custom_plugin8a54.js?ver=1.0.0'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/portfolio/framework/js/jquery.waitforimages8a54.js?ver=1.0.0'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/portfolio/framework/js/isotope.pkgd.min8a54.js?ver=1.0.0'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/portfolio/framework/js/imagesloaded8a54.js?ver=1.0.0'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/shortcodes/vc_extend/vc_custom.js'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/plugins/unibody-plugins/shortcodes/vc_extend/classie.js'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/bootstrap.min4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/viewportchecker4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.fitvids4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.smartmenus4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/wow.min4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.swipebox.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/isotope.pkgd.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/vegas.min4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/text-rotator.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.circle-progress.min4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.easing.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.mine23c.js?ver=5.7'></script>
+				<script type='text/javascript' src='wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.malihu.PageScroll2id4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.countdown.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/jquery.mb.YTPlayer.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/owl.carousel.min4b68.js?ver=1.0.4'>
+					</script>
+				<script type='text/javascript'
+					src='wp-content/themes/unibody/assets/js/retina.min4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript' src='wp-content/themes/unibody/assets/js/main4b68.js?ver=1.0.4'></script>
+				<script type='text/javascript' src='wp-includes/js/wp-embed.min3c21.js?ver=5.1.1'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.mine23c.js?ver=5.7'></script>
+				<script type='text/javascript'
+					src='wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.mine23c.js?ver=5.7'></script>
 </body>
 
 </html>
