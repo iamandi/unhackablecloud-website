@@ -482,7 +482,13 @@
 					<p>
 						<span style="color: red;
 							font-size: 20px;">
-							<strong id="myBlinkingDiv">중요한 발표:</strong>사기꾼을 조심하십시오. 투자자 및 돈피아 코인 보유자는 이 공지를 읽어주세요.
+							<strong id="myBlinkingDiv">중요한 발표: </strong>사기꾼을 조심하십시오. 투자자 및 돈피아 코인 보유자는 이 공지를 읽어주세요.
+						</span>
+					</p>
+					<p>
+						<span style="color: red;
+							font-size: 20px;">
+							<strong id="myBlinkingDivEng">Important announcement: </strong>Beware of scammers. Investors and Donpia coin holders please read this announcement.
 						</span>
 					</p>
 				</div>
@@ -1557,6 +1563,9 @@
 					var t = setInterval(function () {
 						var ele = document.getElementById('myBlinkingDiv');
 						ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+
+						var ele1 = document.getElementById('myBlinkingDivEng');
+						ele1.style.visibility = (ele1.style.visibility == 'hidden' ? '' : 'hidden');
 					}, blink_speed);
 				</script>
 
