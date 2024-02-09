@@ -1,8 +1,12 @@
-# wordpress-site
+# unhackablecloud-website
 
-wordpress-site
-
-To deploy site serve files from localhost_8081 directory.
+For local tests, deploy site by serving files from localhost_8081 directory.
 
 npm i -g serve
 serve ./localhost_8081
+
+## Location of index.html
+
+It is located in localhost_8081 directory
+
+
