@@ -8727,3 +8727,70 @@ i.icon {
 .product-specs a.btn {
 	text-shadow: none;
 }
+
+/* Gallery Image Size Fix */
+.portfolioGallery .portfolio-item .img-holder {
+	height: 200px;
+	/* Set a fixed height for all image containers */
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f5f5;
+	/* Optional: background color for images that don't fill the space */
+}
+
+.portfolioGallery .portfolio-item .img-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* This ensures images fill the container while maintaining aspect ratio */
+	object-position: center;
+	/* Centers the image within the container */
+}
+
+/* Alternative option if you want to maintain aspect ratio but ensure consistent sizing */
+/*
+.portfolioGallery .portfolio-item .img-holder img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; 
+    object-position: center;
+}
+*/
+
+/* Optional: Add hover effect adjustment */
+.portfolioGallery .portfolio-item .img-holder:hover img {
+	transform: scale(1.1);
+	/* Smaller scale to prevent overflow issues */
+}
+
+/* If using images instead of Font Awesome icons */
+.service-box-1 .box-top img {
+	display: table;
+	margin: 0 auto 30px;
+	width: 150px;
+	height: 150px;
+	padding: 26px;
+	line-height: 95px;
+	text-align: center;
+	border-radius: 50%;
+	border: 3px #fff solid;
+	-moz-box-shadow: inset 0 0 13px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: inset 0 0 13px rgba(0, 0, 0, .4);
+	box-shadow: inset 0 0 13px rgba(0, 0, 0, .4);
+	object-fit: contain;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.service-box-1:hover .box-top img {
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-moz-transition: -moz-transform 0.3s;
+	-o-transition: transform 0.3s;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
