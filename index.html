@@ -1,834 +1,934 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>CAT – Cyber Advanced Technology</title>
-		<meta name="description" content="CAT – Cyber Advanced Technology">
-		<meta name="author" content="EXCEPTION">
-		
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-		<!-- Open Graph Meta Tags for Thumbnail -->
-		<meta property="og:title" content="CAT – Cyber Advanced Technology">
-		<meta property="og:description" content="Welcome to CAT – Redefining the Future of Cybersecurity.">
-		<meta property="og:url" content="https://yourwebsite.com">
-		<meta property="og:image" content="https://yourwebsite.com/images/logo.png">
-		<meta property="og:image:width" content="1200">
-		<meta property="og:image:height" content="630">
 
-		<!-- Twitter Card for Thumbnail -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="CAT – Cyber Advanced Technology">
-		<meta name="twitter:description" content="Welcome to CAT – Redefining the Future of Cybersecurity.">
-		<meta name="twitter:image" content="https://yourwebsite.com/images/logo.png">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CAT - Cyber Advanced Technology</title>
+	<meta name="description" content="CAT - Cyber Advanced Technology">
+	<meta name="author" content="EXCEPTION">
 
-		<!-- Put favicon.ico and apple-touch-icon(s).png in the images folder -->
-	    <!--<link rel="shortcut icon" href="images/favicon.ico">-->
-		    	
-		<!-- CSS StyleSheets -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;amp;subset=latin,latin-ext">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/prettyPhoto.css">
-		<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<!--[if lt IE 9]>
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Open Graph Meta Tags for Thumbnail -->
+	<meta property="og:title" content="CAT - Cyber Advanced Technology">
+	<meta property="og:description" content="Welcome to CAT - Redefining the Future of Cybersecurity.">
+	<meta property="og:url" content="https://unhackablecloud.com">
+	<meta property="og:image" content="https://unhackablecloud.com/images/logo.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<!-- Twitter Card for Thumbnail -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="CAT - Cyber Advanced Technology">
+	<meta name="twitter:description" content="Welcome to CAT - Redefining the Future of Cybersecurity.">
+	<meta name="twitter:image" content="https://unhackablecloud.com/images/logo.png">
+
+	<!-- Put favicon.ico and apple-touch-icon(s).png in the images folder -->
+	<!--<link rel="shortcut icon" href="images/favicon.ico">-->
+
+	<!-- CSS StyleSheets -->
+	<link rel="stylesheet"
+		href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;amp;subset=latin,latin-ext">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="rs-plugin/css/settings.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!--[if lt IE 9]>
 	    	<link rel="stylesheet" href="css/ie.css">
 	    	<script type="text/javascript" src="js/html5.js"></script>
 	    <![endif]-->
 
 
-		<!-- Skin style (** you can change the link below with the one you need from skins folder in the css folder **) -->
-		<link rel="stylesheet" href="css/skins/default.css">
+	<!-- Skin style (** you can change the link below with the one you need from skins folder in the css folder **) -->
+	<link rel="stylesheet" href="css/skins/default.css">
 
-		<style>
-			html {
-				scroll-padding-top: 65px; /* 상단바 높이에 맞게 조정 */
+	<style>
+		html {
+			scroll-padding-top: 65px;
+			/* 상단바 높이에 맞게 조정 */
+		}
+
+		.tp-banner-container {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.tp-banner-full {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		.youtube-bg {
+			position: absolute;
+			width: 100%;
+			height: 100% !important;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+
+		.testimonials-1 .testimonials-key-strength {
+			margin-top: 10px;
+			font-size: 14px;
+			color: #666;
+			text-align: left;
+		}
+
+		.portfolio-item.no-border {
+			border-bottom: none;
+		}
+
+		.img-holder img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			border: 1px solid #ccc;
+		}
+
+		.video-container {
+			position: relative;
+			width: 100%;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.caption {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			right: 0;
+			text-align: left;
+			box-sizing: border-box;
+			color: #fff;
+			line-height: 1.4;
+		}
+
+		.tp-resizeme ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 20px;
+		}
+
+		.tp-resizeme ul li {
+			font-size: calc(1rem + 0.5vw);
+			margin-bottom: 10px;
+			word-wrap: break-word;
+		}
+
+		.tp-resizeme {
+			font-size: calc(1.2rem + 0.8vw);
+			margin-bottom: 20px;
+			word-wrap: break-word;
+		}
+
+		@media (max-width: 768px) {
+			#temp {
+				display: none;
 			}
 
-			.tp-banner-container {
-				position: relative;
-				width: 100%;
-				height: 100vh;
-				overflow: hidden;
-				z-index: 1;
+			.container {
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 
-			.tp-banner-full {
-				position: relative;
-				width: 100%;
-				height: 100%;
+			.welcome,
+			.sectionWrapper,
+			.gry-bg {
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 
-			.youtube-bg {
-				position: absolute;
-				width: 100%;
-				height: 100% !important;
-				top: 0;
-				left: 0;
-				z-index: -1;
-			}
-			.testimonials-1 .testimonials-key-strength {
-				margin-top: 10px; 
-				font-size: 14px; 
-				color: #666; 
-				text-align: left; 
-			}
-			.portfolio-item.no-border {
-				border-bottom: none;
-			}
-			.img-holder img {
-				width: 300px; 
-				height: 200px; 
-				object-fit: cover; 
-				border: 1px solid #ccc; 
+			.menuBtn {
+				display: none;
 			}
 
-			.video-container {
-				position: relative;
-				width: 100%;
-				padding-bottom: 56.25%; 
-				height: 0;
-				overflow: hidden;
-			}
-
-			.video-container iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
 			.caption {
-				position: absolute;
-				width: 100%;
-				left: 0;
-				right: 0;
-				text-align: left; 
-				box-sizing: border-box;
-				color: #fff; 
-				line-height: 1.4;
+				font-size: 1rem;
 			}
 
-			.tp-resizeme ul {
-				list-style: none;
-				padding: 0;
-				margin: 0 0 20px; 
-			}
-
-			.tp-resizeme ul li {
-				font-size: calc(1rem + 0.5vw); 
-				margin-bottom: 10px; 
-				word-wrap: break-word; 
-			}
-
+			.tp-resizeme ul li,
 			.tp-resizeme {
-				font-size: calc(1.2rem + 0.8vw); 
-				margin-bottom: 20px;
-				word-wrap: break-word; 
+				font-size: 1rem;
 			}
+		}
 
-			@media (max-width: 768px) {
-				#temp {
-					display: none; 
-				}
-				.container {
-					padding-left: 15px;
-					padding-right: 15px;
-				}
-				
-				.welcome, .sectionWrapper, .gry-bg {
-					padding-left: 15px;
-					padding-right: 15px;
-				}
-				.menuBtn {
-					display: none;
-				}
-				.caption {
-					font-size: 1rem; 
-				}
+		#vertical-ticker li {
+			color: white;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+		}
 
-				.tp-resizeme ul li,
-				.tp-resizeme {
-					font-size: 1rem; 
-				}
-			}
+		.caption.sfb.large-light-title.tp-resizeme.witTxt {
+			font-size: 40px;
+			color: white;
+			line-height: 1.2;
+			text-align: left;
+			padding: 0;
+			font-weight: bold;
+		}
 
-			#vertical-ticker li {
-				color: white;
-				font-size: 30px; 
-				margin: 0; 
-				padding: 0; 
-				text-align: left; 
-			}
-			
-			.caption.sfb.large-light-title.tp-resizeme.witTxt {
-				font-size: 40px; 
-				color: white; 
-				line-height: 1.2; 
-				text-align: left; 
-				padding: 0;
-				font-weight: bold;
-			}
-			
-			.rotating-icon {
-				transition: transform 0.2s ease;
-			}
-			.portfolio-item:hover .rotating-icon {
-				transform: rotate(360deg) scale(0.8); 
-			}
-			
+		.rotating-icon {
+			transition: transform 0.2s ease;
+		}
 
-		</style>
-	
-	</head>
-	<body>
-	    <!-- site preloader start -->
-	    <div class="page-loader">
-	    	<div class="loader-in"></div>
-	    </div>
-	    <!-- site preloader end -->
-	    
-	    <div id="headWrapper" class="clearfix">
-			<header class="top-head" data-sticky="true">
-				<div class="container">
-					<div class="row">
-						<div class="logo cell-3">
-							<a href="index.html"></a>
-						</div>
-						<div class="cell-9 top-menu">
-							<!-- Top navigation menu start -->
-							<nav class="top-nav mega-menu">
-								<ul>
-									<!-- Navigation links -->
-									<li class="selected"><a href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
-									<li><a href="#about"><i class="fa fa-user"></i><span>About</span></a></li>
-									<li><a href="#services"><i class="fa fa-cogs"></i><span>Services</span></a></li>
-									<li><a href="#portfolio"><i class="fa fa-image"></i><span>Portfolio</span></a></li>
-									<li><a href="#Gallery"><i class="fa fa-clone"></i><span>Gallery</span></a></li>
-								</ul>
-							</nav>
-							<!-- Top navigation menu end -->
-						</div>
+		.portfolio-item:hover .rotating-icon {
+			transform: rotate(360deg) scale(0.8);
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- site preloader start -->
+	<div class="page-loader">
+		<div class="loader-in"></div>
+	</div>
+	<!-- site preloader end -->
+
+	<div id="headWrapper" class="clearfix">
+		<header class="top-head" data-sticky="true">
+			<div class="container">
+				<div class="row">
+					<div class="logo cell-3">
+						<a href="index.html"><img src="images/logo.png" alt="CAT - Cyber Advanced Technology"></a>
+					</div>
+					<div class="cell-9 top-menu">
+						<!-- Top navigation menu start -->
+						<nav class="top-nav mega-menu">
+							<ul>
+								<!-- Navigation links -->
+								<li class="selected"><a href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
+								<li><a href="#about"><i class="fa fa-user"></i><span>About</span></a></li>
+								<li><a href="#services"><i class="fa fa-cogs"></i><span>Why CAT</span></a></li>
+								<li><a href="#portfolio"><i class="fa fa-image"></i><span>Products</span></a></li>
+								<li><a href="#Gallery"><i class="fa fa-clone"></i><span>Gallery</span></a></li>
+							</ul>
+						</nav>
+						<!-- Top navigation menu end -->
 					</div>
 				</div>
-			</header>
-		</div>
-		<!-- Header End -->
-		
-		<!-- Sections -->
-			<!-- Header End -->
+			</div>
+		</header>
+	</div>
+	<!-- Header End -->
 
-	
-		
-			<!-- Content Start -->
-			<div id="contentWrapper">
-				<!-- home slider start -->
-				<div id="home" class="tp-banner-container">
-					<div class="tp-banner-full" >
-						<ul>
-							<li data-transition="fade" data-slotamount="7">
-								<div 
-									class="youtube-bg"
-									data-vbg="images/back.mp4" 
-									data-vbg-autoplay="true" 
-									data-vbg-mute="true">
-								</div>
-								<!--<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+	<!-- Sections -->
+	<!-- Header End -->
+
+
+
+	<!-- Content Start -->
+	<div id="contentWrapper">
+		<!-- home slider start -->
+		<div id="home" class="tp-banner-container">
+			<div class="tp-banner-full">
+				<ul>
+					<li data-transition="fade" data-slotamount="7">
+						<div class="youtube-bg" data-vbg="images/back.mp4" data-vbg-autoplay="true" data-vbg-mute="true">
+						</div>
+						<!--<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
 									<source src="images/back.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>-->
-								<!--
+						<!--
 								<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
 								<iframe frameborder="0" height="100%" width="100%" 
 									src="https://youtube.com/embed/mpgsoOuYJag?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=mpgsoOuYJag">
 								</iframe>
 								</div>
 								-->
-								<!--<img alt="" src="images/slider/dummy.png" data-lazyload="images/slider/fullscreen/bg-1.jpg">-->
-								<div class="caption lft large-title" data-x="20" data-y="20" data-speed="600" data-start="1000">
-									<ul id="vertical-ticker" class="tp-resizeme">
-										<li>Driving Innovation Beyond Limits</li>
-										<li>Securing the Future of Connectivity</li>
-										<li>Fast. Reliable. Unbreakable.</li>
-										<li>Empowering Digital Transformation</li>
-										<li>Built for Tomorrow, Delivered Today</li>
-										<li>Leading the Charge in Cybersecurity</li>
-									</ul>
-								</div>
-								<div class="caption sfb large-light-title tp-resizeme witTxt" data-x="20" data-y="150" data-speed="600" data-start="1600">
-									EXPECT THE UNHACKABLE
-								</div>
-								<div class="caption sfl larger-text tp-resizeme witTxt" data-x="20" data-y="220" data-speed="600" data-start="1800">
-									Secure Everything
-								</div>
-								<div class="caption sfb larger-text tp-resizeme witTxt" data-x="20" data-y="260" data-speed="600" data-start="2200">
-									Simplify Security
-								</div>
-								<div class="caption sfr larger-text tp-resizeme witTxt" data-x="20" data-y="300" data-speed="600" data-start="2600">
-									Redefine Confidence
-								</div>
-								
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- home slider end -->
-				<!-- Welcome Box start -->
-				<div id="about" class="welcome page-section" style="padding-bottom: 0;">
-					<div class="container">
-						<div class="row">
-							<h2 class="bolder" style="text-align: left; margin-bottom: 20px;">
-								<span class="main-color">Welcome To Cyber Advanced Technology</span> - Redefining the Future of Cybersecurity
-							</h2>
-							<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-bottom: 10px;">
-								<strong>Established in 2013</strong>, Cyber Advanced Technology (CAT) stands at the forefront of technological innovation and cybersecurity excellence. Over the past decade, we have carved a unique path through relentless innovation, rigorous industrial applications, and cutting-edge research and development.
-							</p>
-							<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-bottom: 10px;">
-								Our work is built upon a foundation of <strong>performance, reliability, strength, and unparalleled security</strong>, setting new benchmarks for the industry.
-							</p>
-							<p style="text-align: left; line-height: 1.8; font-size: 16px;">
-								At CAT, we don’t just envision the future – we engineer it. With our groundbreaking OT-OCN (Operational Technology-Operational Centric Network) architecture, we are reshaping the internet as we know it, ensuring a safer, faster, and more scalable digital ecosystem.
-							</p>
-							<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-top: 10px;">
-								<em>Explore the power of innovation with Cyber Advanced Technology.</em>
-							</p>
+						<!--<img alt="" src="images/slider/dummy.png" data-lazyload="images/slider/fullscreen/bg-1.jpg">-->
+						<div class="caption lft large-title" data-x="20" data-y="20" data-speed="600" data-start="1000">
+							<ul id="vertical-ticker" class="tp-resizeme">
+								<li>Driving Innovation Beyond Limits</li>
+								<li>Securing the Future of Connectivity</li>
+								<li>Fast. Reliable. Unbreakable.</li>
+								<li>Empowering Digital Transformation</li>
+								<li>Built for Tomorrow, Delivered Today</li>
+								<li>Leading the Charge in Cybersecurity</li>
+							</ul>
 						</div>
-						<div class="signature" style="margin-top: 40px; text-align: left;">
-							<img src="images/sign.png" alt="The CAT Team" style="max-width: 300px; height: auto;">
+						<div class="caption sfb large-light-title tp-resizeme witTxt" data-x="20" data-y="150" data-speed="600"
+							data-start="1600">
+							EXPECT THE UNHACKABLE
 						</div>
-					</div>
-				</div>
-				<!-- mov slider start -->
-				<div id="intro" class="sectionWrapper"  style="padding-top: 40px;">
-					<div class="container">
-						<div class="row">
-							<div class="cell-12 fx" data-animate="fadeInUp">
-								<!--<h3 class="block-head center">Intro</h3>-->
-								<div class="video-container">
-									<iframe 
-										src="https://www.youtube.com/embed/ggYaA3bN2yg?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&fs=0&autoplay=1&mute=1" 
-										title="YouTube video player" 
-										frameborder="0" 
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-										allowfullscreen>
-									</iframe>
-								</div>
-							</div>
+						<div class="caption sfl larger-text tp-resizeme witTxt" data-x="20" data-y="220" data-speed="600"
+							data-start="1800">
+							Secure Everything
 						</div>
-					</div>
-				</div>
-				<!-- mov slider end -->
-				
-				<!-- Welcome Box end -->
-				
-				<!-- service start -->
-				<div id="services" class="gry-bg">
-					<div class="container">
-						<div class="row">
-							<!-- Feature 1 -->
-							<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="200">
-								<div class="box-top">
-									<i class="fa fa-flask"></i>
-									<h3><span>Creators of</span><br>OT-OCN</h3>
-									<p>
-										We design and implement the revolutionary <strong>OT-OCN paradigm</strong> to meet your organization's unique needs, ensuring <strong>seamless scalability</strong> and <strong>innovation</strong> in every step.
-									</p>
-								</div>
-							</div>
-							<!-- Feature 2 -->
-							<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="400">
-								<div class="box-top">
-									<i class="fa fa-users"></i>
-									<h3><span>People</span><br>Centric</h3>
-									<p>
-										Our approach prioritizes <strong>collaboration</strong> and <strong>user satisfaction</strong>, empowering teams to build <strong>secure, scalable</strong>, and future-ready applications within the OT-OCN framework.
-									</p>
-								</div>
-							</div>
-							<!-- Feature 3 -->
-							<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="600">
-								<div class="box-top">
-									<i class="fa fa-lock"></i>
-									<h3><span>Data</span><br>Security</h3>
-									<p>
-										We provide industry-leading <strong>security solutions</strong>, safeguarding your <strong>data</strong>, <strong>services</strong>, and <strong>users</strong> from cyber threats while ensuring uninterrupted operations.
-									</p>
-								</div>
-							</div>
-							<!-- Feature 4 -->
-							<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="800">
-								<div class="box-top">
-									<i class="fa fa-code"></i>
-									<h3><span>Developer</span><br>Friendly</h3>
-									<p>
-										With a robust framework and extensive documentation, we enable <strong>developers</strong> to integrate seamlessly into the <strong>OT-OCN ecosystem</strong>, driving <strong>innovation</strong> and <strong>efficiency</strong>.
-									</p>
-								</div>
-							</div>
+						<div class="caption sfb larger-text tp-resizeme witTxt" data-x="20" data-y="260" data-speed="600"
+							data-start="2200">
+							Simplify Security
 						</div>
-					</div>
-				</div>
-				<!-- service start -->
-				
-				<!-- About us and Features container start -->
-				<div class="sectionWrapper">
-					<div class="container">
-						<div class="row">
-							<!-- About us left block -->
-							<div class="cell-7">
-								<!-- What Makes Us Unique -->
-								<div class="fx" data-animate="fadeInLeft">
-									<h3 class="block-head">What Makes Us Unique</h3>
-									
-									<div class="testimonials-1">
-										<!-- Unique Feature 1 -->
-										<div>
-											<div class="testimonials-bg">
-												<img alt="" src="images/icons/innovation.png" class="testimonials-img">
-												<span><strong>Innovation at the Core:</strong> We have pioneered OT-OCN architecture to redefine the future of secure, scalable networks.</span>
-											</div>
-											<div class="testimonials-key-strength">
-												<strong>Key Strength:</strong> Revolutionary Internet Architecture
-											</div>
-										</div>
-										
-										<!-- Unique Feature 2 -->
-										<div>
-											<div class="testimonials-bg">
-												<img alt="" src="images/icons/security.png" class="testimonials-img">
-												<span><strong>Unmatched Security:</strong> Our solutions ensure end-to-end data protection, safeguarding critical systems from cyber threats.</span>
-											</div>
-											<div class="testimonials-key-strength">
-												<strong>Key Strength:</strong> Industry-Leading Cybersecurity
-											</div>
-										</div>
-										
-										<!-- Unique Feature 3 -->
-										<div>
-											<div class="testimonials-bg">
-												<img alt="" src="images/icons/customization.png" class="testimonials-img">
-												<span><strong>Tailored Solutions:</strong> From government projects to enterprise solutions, we deliver personalized technologies for diverse industries.</span>
-											</div>
-											<div class="testimonials-key-strength">
-												<strong>Key Strength:</strong> Industry-Specific Flexibility
-											</div>
-										</div>
-										
-										<!-- Unique Feature 4 -->
-										<div>
-											<div class="testimonials-bg">
-												<img alt="" src="images/icons/support.png" class="testimonials-img">
-												<span><strong>Comprehensive Support:</strong> Our team offers seamless integration and exceptional post-implementation support.</span>
-											</div>
-											<div class="testimonials-key-strength">
-												<strong>Key Strength:</strong> Unrivaled Client Service
-											</div>
-										</div>
-									</div>
-									
-									<p class="padd-top-20">
-										At Cyber Advanced Technology, we merge innovation, security, and client-centric solutions to build a safer, more connected future. Let us redefine your organization's possibilities.
-									</p>
-								</div>
-							</div>
-							<!-- About us left block end -->
-							
-							<!-- Our skills right block -->
-							<div class="cell-5 fx" data-animate="fadeInRight">
-								<h3 class="block-head">Our Skills</h3>
-								<ul class="levels">
-									<li>
-										<div class="level-name">Cybersecurity Solutions</div>
-										<div class="level-out"><span></span>
-											<div class="level-in" data-percent="100"></div>
-											<div class="clearfix"></div>
-										</div>
-									</li>
-									<li>
-										<div class="level-name">OT-OCN Architecture</div>
-										<div class="level-out"><span></span>
-											<div class="level-in" data-percent="95"></div>
-											<div class="clearfix"></div>
-										</div>
-									</li>
-									<li>
-										<div class="level-name">Custom Network Solutions</div>
-										<div class="level-out"><span></span>
-											<div class="level-in" data-percent="90"></div>
-											<div class="clearfix"></div>
-										</div>
-									</li>
-									<li>
-										<div class="level-name">Client Support & Integration</div>
-										<div class="level-out"><span></span>
-											<div class="level-in" data-percent="85"></div>
-											<div class="clearfix"></div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- Our skills right block end -->
+						<div class="caption sfr larger-text tp-resizeme witTxt" data-x="20" data-y="300" data-speed="600"
+							data-start="2600">
+							Redefine Confidence
 						</div>
-					</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- home slider end -->
+		<!-- Welcome Box start -->
+		<div id="about" class="welcome page-section" style="padding-bottom: 0;">
+			<div class="container">
+				<div class="row">
+					<h2 class="bolder" style="text-align: left; margin-bottom: 20px;">
+						<span class="main-color">Welcome To Cyber Advanced Technology</span> - Redefining the Future of
+						Cybersecurity
+					</h2>
+					<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-bottom: 10px;">
+						<strong>Established in 2013</strong>, Cyber Advanced Technology (CAT) stands at the forefront of
+						technological innovation and cybersecurity excellence. Over the past decade, we have carved a unique path
+						through relentless innovation, rigorous industrial applications, and cutting-edge research and development.
+					</p>
+					<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-bottom: 10px;">
+						Our work is built upon a foundation of <strong>performance, reliability, strength, and unparalleled
+							security</strong>, setting new benchmarks for the industry.
+					</p>
+					<p style="text-align: left; line-height: 1.8; font-size: 16px;">
+						At CAT, we don't just envision the future - we engineer it. With our groundbreaking OT-OCN (Operational
+						Technology-Operational Centric Network) architecture, we are reshaping the internet as we know it, ensuring
+						a safer, faster, and more scalable digital ecosystem.
+					</p>
+					<p style="text-align: left; line-height: 1.8; font-size: 16px; margin-top: 10px;">
+						<em>Explore the power of innovation with Cyber Advanced Technology.</em>
+					</p>
 				</div>
-				
-				
-				<!-- About us and Features container end -->				
-				
-				<!-- OT-OCN start -->
-				<div class="sectionWrapper gry-bg">
-					<div class="container">
-						<div class="row">
-							<!-- Left content block for OT-OCN -->
-							<div class="cell-3">
-								<h3 class="block-head side-heading">OT-OCN</h3>
-								<p class="portfolio-lft-txt">
-									OT-OCN is the NEXT GENERATION internet architecture. Operational Technology-Operational Centric Network resolves the flaws of traditional TCP/IP protocols and coexists seamlessly with current paradigms, ensuring scalability, security, and reliability.
+				<div class="signature" style="margin-top: 40px; text-align: left;">
+					<img src="images/sign.png" alt="The CAT Team" style="max-width: 300px; height: auto;">
+				</div>
+			</div>
+		</div>
+		<!-- mov slider start -->
+		<div id="intro" class="sectionWrapper" style="padding-top: 40px;">
+			<!-- mov slider end -->
+
+			<!-- Welcome Box end -->
+
+			<!-- service start -->
+			<div id="services" class="gry-bg">
+				<div class="container">
+					<div class="row">
+						<!-- Feature 1: Creators of OT-OCN -->
+						<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="200">
+							<div class="box-top">
+								<!-- Replace with your cloud gear image -->
+								<img src="images/creators_of_ot-ocn.png" alt="OT-OCN"
+									style="width: 150px; height: 150px; margin-bottom: 20px;">
+								<h3><span>Creators of</span><br>OT-OCN</h3>
+								<p>
+									We design and implement the revolutionary <strong>OT-OCN paradigm</strong> to meet your organization's
+									unique needs, ensuring <strong>seamless scalability</strong> and <strong>innovation</strong> in every
+									step.
 								</p>
 							</div>
-							<!-- Icons and Features block -->
-							<div class="cell-9">
-								<div class="homeGallery portfolio">
-									<!-- Feature 1 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-bolt rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>1. Fast and Scalable</h4>
-											<p>Name-driven content delivery paradigm makes it extremely fast and scalable.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 2 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-lock rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>2. Secure</h4>
-											<p>Data security and reliability through decentralized architecture secured by hardware and software.</p>
-										</div>
-									</div>
-									<!-- Feature 3 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-cogs rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>3. Customizable</h4>
-											<p>Highly customizable to the needs of developers and users.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 4 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-lightbulb-o rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>4. Paradigm Shift</h4>
-											<p>OT-OCN is name-driven and set to replace the existing IP-driven paradigm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 5 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-clock-o rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>5. Real Time</h4>
-											<p>Best suited for real-time applications in the era of IoT and Industry 4.0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 6 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-shield rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>6. Intrusion Prevention</h4>
-											<p>Offers cloud intrusion protection and prevention mechanisms.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 7 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-link rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>7. End-to-End Security</h4>
-											<p>End-to-end security at application, session, and transport levels.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-									<!-- Feature 8 -->
-									<div class="portfolio-item no-border">
-										<div class="img-holder">
-											<i class="fa fa-bitcoin rotating-icon" style="font-size: 50px; color: #f04;"></i>
-										</div>
-										<div class="name-holder">
-											<h4>8. Blockchain Ready</h4>
-											<p>The content authenticity and distribution model make it blockchain ready.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-										</div>
-									</div>
-								</div>
+						</div>
+						<!-- Feature 2: People Centric -->
+						<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="400">
+							<div class="box-top">
+								<!-- Replace with your team collaboration image -->
+								<img src="images/people_centric.png" alt="People Centric"
+									style="width: 150px; height: 150px; margin-bottom: 20px;">
+								<h3><span>People</span><br>Centric</h3>
+								<p>
+									Our approach prioritizes <strong>collaboration</strong> and <strong>user satisfaction</strong>,
+									empowering teams to build <strong>secure, scalable</strong>, and future-ready applications within the
+									OT-OCN framework.
+								</p>
 							</div>
-							
-							
-							
+						</div>
+						<!-- Feature 3: Data Security -->
+						<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="600">
+							<div class="box-top">
+								<!-- Replace with your network security image -->
+								<img src="images/data_security.png" alt="Data Security"
+									style="width: 150px; height: 150px; margin-bottom: 20px;">
+								<h3><span>Data</span><br>Security</h3>
+								<p>
+									We provide industry-leading <strong>security solutions</strong>, safeguarding your
+									<strong>data</strong>, <strong>services</strong>, and <strong>users</strong> from cyber threats while
+									ensuring uninterrupted operations.
+								</p>
+							</div>
+						</div>
+						<!-- Feature 4: Developer Friendly -->
+						<div class="cell-3 service-box-1 fx" data-animate="fadeInUp" data-animation-delay="800">
+							<div class="box-top">
+								<!-- Replace with your code icon image -->
+								<img src="images/developer_friendly.png" alt="Developer Friendly"
+									style="width: 150px; height: 150px; margin-bottom: 20px;">
+								<h3><span>Developer</span><br>Friendly</h3>
+								<p>
+									With a robust framework and extensive documentation, we enable <strong>developers</strong> to
+									integrate
+									seamlessly into the <strong>OT-OCN ecosystem</strong>, driving <strong>innovation</strong> and
+									<strong>efficiency</strong>.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- OT-OCN end -->
+			</div>
+			<!-- service start -->
 
-				<!-- anubis start -->
-				<div id="portfolio" class="sectionWrapper">
-					<div class="container">
-						<!-- ANUBIS Section -->
-						<div class="row">
-							<!-- Left content block for ANUBIS -->
-							<div class="cell-8">
-								<div class="fx" data-animate="fadeInLeft">
-									<h3 class="block-head">ANUBIS</h3>
-									<p class="hint hintMargin">Impenetrable and uninterrupted corporate cybersecurity solution.</p>
-									<p>
-										ANUBIS is a robust, standalone hardware device designed for corporate networks. It provides 
-										<strong>impenetrable and uninterrupted</strong> protection, allowing businesses to operate seamlessly without disruption. 
-										By interfacing between corporate networks and the internet, ANUBIS ensures that malicious attacks are disabled without 
-										compromising ongoing IT operations. This rack-mountable device supports and collaborates with existing IT infrastructures, 
-										making it a reliable addition to your cybersecurity toolkit.
-									</p>
-									<ul class="list alt list-ok">
-										<li class="fx" data-animate="fadeInLeft">Protects critical IT operations seamlessly</li>
-										<li class="fx" data-animate="fadeInLeft" data-animation-delay="200">Targets financial, healthcare, government sectors</li>
-										<li class="fx" data-animate="fadeInLeft" data-animation-delay="400">Collaborates with existing IT systems effortlessly</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Right image block for ANUBIS -->
-							<div class="cell-4 fx" data-animate="flipInX">
-								<div class="padd-top-25 center">
-									<img alt="ANUBIS Device" src="images/anubis.jpg">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="sectionWrapper">
-					<div class="container">
-						<!-- BBS Section -->
-						<div class="row">
-							<!-- Left image block for BBS -->
-							<div class="cell-4 fx" data-animate="flipInX">
-								<div class="padd-top-25 center">
-									<img alt="BBS Device" src="images/usb.jpg">
-								</div>
-							</div>
-							<!-- Right content block for BBS -->
-							<div class="cell-8">
-								<div class="fx" data-animate="fadeInRight">
-									<h3 class="block-head">BBS</h3>
-									<p class="hint hintMargin">Portable cybersecurity solution for small offices and home users.</p>
-									<p>
-										The <strong>OT-OCN BBS-USB-7</strong> is a portable and convenient device tailored for individuals and small office environments. 
-										With its <strong>impenetrable and uninterrupted cloud technology</strong>, BBS ensures comprehensive protection for all connected devices. 
-										This USB-based solution is designed for ease of use while delivering the same robust security benefits seen in larger-scale corporate solutions.
-									</p>
-									<ul class="list alt list-ok">
-										<li class="fx" data-animate="fadeInRight">Portable USB solution for maximum convenience</li>
-										<li class="fx" data-animate="fadeInRight" data-animation-delay="200">Ideal for small office and home setups</li>
-										<li class="fx" data-animate="fadeInRight" data-animation-delay="400">Provides impenetrable and uninterrupted protection</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- anubis end -->
+			<!-- About us and Features container start -->
+			<div class="sectionWrapper">
+				<div class="container">
+					<div class="row">
+						<!-- About us left block -->
+						<div class="cell-7">
+							<!-- What Makes Us Unique -->
+							<div class="fx" data-animate="fadeInLeft">
+								<h3 class="block-head">What Makes Us Unique</h3>
 
-				
-				<!-- FUN Staff start -->
-				<div class="fun-staff staff-1 block-bg-3 sectionWrapper">
-					<div class="container">
-						<!-- Staff item start -->
-						<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="200">
-							<div class="fun-number">4</div>
-							<div class="fun-text main-bg">Presence in Countries</div>
-							<div class="fun-icon"><i class="fa fa-globe"></i></div>
-						</div>
-						<!-- Staff item end -->
-						
-						<!-- Staff item start -->
-						<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="400">
-							<div class="fun-number">9</div>
-							<div class="fun-text main-bg">Part of Global Hackathons</div>
-							<div class="fun-icon"><i class="fa fa-code"></i></div>
-						</div>
-						<!-- Staff item end -->
-						
-						<!-- Center message -->
-						<div class="cell-4 fx" data-animate="fadeInDown">
-							<div class="fun-title extraBold">BUILDING A <span>SECURE FUTURE</span></div>
-						</div>
-						<!-- Center message end -->
-						
-						<!-- Staff item start -->
-						<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="600">
-							<div class="fun-number">6</div>
-							<div class="fun-text main-bg">Projects Completed</div>
-							<div class="fun-icon"><i class="fa fa-tasks"></i></div>
-						</div>
-						<!-- Staff item end -->
-						
-						<!-- Staff item start -->
-						<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="800">
-							<div class="fun-number">12</div>
-							<div class="fun-text main-bg">Products Launched</div>
-							<div class="fun-icon"><i class="fa fa-rocket"></i></div>
-						</div>
-						<!-- Staff item end -->
-					</div><!-- .container end -->
-				</div><!-- .fun-staff end -->
-				<!-- FUN Staff end -->
+								<div class="testimonials-1">
+									<!-- Unique Feature 1 -->
+									<div>
+										<div class="testimonials-bg">
+											<img alt="" src="images/icons/innovation.png" class="testimonials-img">
+											<span><strong>Innovation at the Core:</strong> We have pioneered OT-OCN architecture to redefine
+												the
+												future of secure, scalable networks.</span>
+										</div>
+										<div class="testimonials-key-strength">
+											<strong>Key Strength:</strong> Revolutionary Internet Architecture
+										</div>
+									</div>
 
-				<div id="Gallery" class="sectionWrapper">
-					<div class="container">
-						<div class="row">
-							<div class="cell-12 fx" data-animate="fadeInUp">
-								<h3 class="block-head center">Watch Our Video</h3>
-								<div class="video-container">
-									<iframe 
-										src="https://www.youtube.com/embed/WFet2FhyThg?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&fs=0&autoplay=0&mute=0" 
-										title="YouTube video player" 
-										frameborder="0" 
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-										allowfullscreen>
-									</iframe>
+									<!-- Unique Feature 2 -->
+									<div>
+										<div class="testimonials-bg">
+											<img alt="" src="images/icons/security.png" class="testimonials-img">
+											<span><strong>Unmatched Security:</strong> Our solutions ensure end-to-end data protection,
+												safeguarding critical systems from cyber threats.</span>
+										</div>
+										<div class="testimonials-key-strength">
+											<strong>Key Strength:</strong> Industry-Leading Cybersecurity
+										</div>
+									</div>
+
+									<!-- Unique Feature 3 -->
+									<div>
+										<div class="testimonials-bg">
+											<img alt="" src="images/icons/customization.png" class="testimonials-img">
+											<span><strong>Tailored Solutions:</strong> From government projects to enterprise solutions, we
+												deliver personalized technologies for diverse industries.</span>
+										</div>
+										<div class="testimonials-key-strength">
+											<strong>Key Strength:</strong> Industry-Specific Flexibility
+										</div>
+									</div>
+
+									<!-- Unique Feature 4 -->
+									<div>
+										<div class="testimonials-bg">
+											<img alt="" src="images/icons/support.png" class="testimonials-img">
+											<span><strong>Comprehensive Support:</strong> Our team offers seamless integration and exceptional
+												post-implementation support.</span>
+										</div>
+										<div class="testimonials-key-strength">
+											<strong>Key Strength:</strong> Unrivaled Client Service
+										</div>
+									</div>
 								</div>
+
+								<p class="padd-top-20">
+									At Cyber Advanced Technology, we merge innovation, security, and client-centric solutions to build a
+									safer, more connected future. Let us redefine your organization's possibilities.
+								</p>
+							</div>
+						</div>
+						<!-- About us left block end -->
+
+						<!-- Our skills right block -->
+						<div class="cell-5 fx" data-animate="fadeInRight">
+							<h3 class="block-head">Our Skills</h3>
+							<ul class="levels">
+								<li>
+									<div class="level-name">Cybersecurity Solutions</div>
+									<div class="level-out"><span></span>
+										<div class="level-in" data-percent="100"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="level-name">OT-OCN Architecture</div>
+									<div class="level-out"><span></span>
+										<div class="level-in" data-percent="95"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="level-name">Custom Network Solutions</div>
+									<div class="level-out"><span></span>
+										<div class="level-in" data-percent="90"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="level-name">Client Support & Integration</div>
+									<div class="level-out"><span></span>
+										<div class="level-in" data-percent="85"></div>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- Our skills right block end -->
+					</div>
+				</div>
+			</div>
+
+
+			<!-- About us and Features container end -->
+
+			<!-- OT-OCN start -->
+			<div class="sectionWrapper gry-bg">
+				<div class="container">
+					<div class="row">
+						<!-- Left content block for OT-OCN -->
+						<div class="cell-3">
+							<h3 class="block-head side-heading">OT-OCN</h3>
+							<p class="portfolio-lft-txt">
+								OT-OCN is the NEXT GENERATION internet architecture. Operational Technology-Operational Centric Network
+								resolves the flaws of traditional TCP/IP protocols and coexists seamlessly with current paradigms,
+								ensuring scalability, security, and reliability.
+							</p>
+						</div>
+						<!-- Icons and Features block -->
+						<div class="cell-9">
+							<div class="homeGallery portfolio">
+								<!-- Feature 1 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-bolt rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>1. Fast and Scalable</h4>
+										<p>Name-driven content delivery paradigm makes it extremely fast and
+											scalable.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 2 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-lock rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>2. Secure</h4>
+										<p>Data security and reliability through decentralized architecture secured by hardware and
+											software.
+										</p>
+									</div>
+								</div>
+								<!-- Feature 3 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-cogs rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>3. Customizable</h4>
+										<p>Highly customizable to the needs of developers and
+											users.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 4 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-lightbulb-o rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>4. Paradigm Shift</h4>
+										<p>OT-OCN is name-driven and set to replace the existing IP-driven
+											paradigm.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 5 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-clock-o rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>5. Real Time</h4>
+										<p>Best suited for real-time applications in the era of IoT and Industry
+											4.0.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 6 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-shield rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>6. Intrusion Prevention</h4>
+										<p>Offers cloud intrusion protection and prevention
+											mechanisms.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 7 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-link rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>7. End-to-End Security</h4>
+										<p>End-to-end security at application, session, and transport
+											levels.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+								<!-- Feature 8 -->
+								<div class="portfolio-item no-border">
+									<div class="img-holder">
+										<i class="fa fa-bitcoin rotating-icon" style="font-size: 50px; color: #f04;"></i>
+									</div>
+									<div class="name-holder">
+										<h4>8. Blockchain Ready</h4>
+										<p>The content authenticity and distribution model make it blockchain
+											ready.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- OT-OCN end -->
+
+			<!-- anubis start -->
+			<div id="portfolio" class="sectionWrapper">
+				<div class="container">
+					<!-- ANUBIS Section -->
+					<div class="row">
+						<!-- Left content block for ANUBIS -->
+						<div class="cell-8">
+							<div class="fx" data-animate="fadeInLeft">
+								<h3 class="block-head">ANUBIS</h3>
+								<p class="hint hintMargin">Impenetrable and uninterrupted corporate cybersecurity solution.</p>
+								<p>
+									ANUBIS is a robust, standalone hardware device designed for corporate networks. It provides
+									<strong>impenetrable and uninterrupted</strong> protection, allowing businesses to operate seamlessly
+									without disruption.
+									By interfacing between corporate networks and the internet, ANUBIS ensures that malicious attacks are
+									disabled without
+									compromising ongoing IT operations. This rack-mountable device supports and collaborates with existing
+									IT infrastructures,
+									making it a reliable addition to your cybersecurity toolkit.
+								</p>
+								<ul class="list alt list-ok">
+									<li class="fx" data-animate="fadeInLeft">Protects critical IT operations seamlessly</li>
+									<li class="fx" data-animate="fadeInLeft" data-animation-delay="200">Targets financial, healthcare,
+										government sectors</li>
+									<li class="fx" data-animate="fadeInLeft" data-animation-delay="400">Collaborates with existing IT
+										systems effortlessly</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Right image block for ANUBIS -->
+						<div class="cell-4 fx" data-animate="flipInX">
+							<div class="padd-top-25 center">
+								<img alt="ANUBIS Device" src="images/anubis.png">
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- Portfolio Staff -->
-				<div class="sectionWrapper gry-bg">
-					<div class="container">
-						<h3 class="block-head">Gallery</h3>
-						
-						<div class="portfolioGallery portfolio">
-								<!-- staff item start -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image0.png" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="CAT team as part of Seoul Korean Hackathon with other Korean Dignitaries"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image0.png">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">In Seoul, Korea</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								 <!-- staff item start -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image1.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="Mr. Bruce Khavar addressing CES 2019 in Las Vegas"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image1.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">CES 2019, Las Vegas</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								 <!-- staff item start -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image2.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="Mr. Bruce Khavar meeting former US president, Mr. Bush"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image2.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">meeting Mr. Bush</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								 <!-- staff item start -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image3.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="Proceeding with the business agreement of C.A.T. INC & AGBA... Preparing to be listed on NASDAQ"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image3.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">C.A.T. INC & AGBA</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								 <!-- staff item start -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image4.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="Bruce Khavar speaking on the need of digital peace"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image4.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">New Delhi, India</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image5.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="Mr. Bruce Khavar receiving MK Gandhi Peace Prize winner 2019, New Delhi, India"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image5.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">2019, New Delhi, India</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-								<div>
-									<div class="portfolio-item">
-										<div class="img-holder">
-											<div class="img-over">
-												<a href="images/image6.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]" title="CEO Bruce Khavar featured on the cover of eForensics Magazine in 2017"><b class="fa fa-search-plus"></b></a>
-											</div>
-											<img alt="" src="images/image6.jpg">
-										</div>
-										<div class="name-holder">
-											<a href="#" class="project-name">eForensics Magazine</a>
-										</div>
-									</div>
-								</div>
-								<!-- staff item end -->
-	
-	
-								
-							</div>	
+			</div>
+			<div class="sectionWrapper">
+				<div class="container">
+					<!-- BBS Section -->
+					<div class="row">
+						<!-- Left image block for BBS -->
+						<div class="cell-4 fx" data-animate="flipInX">
+							<div class="padd-top-25 center">
+								<img alt="BBS Device" src="images/bbs-firecat.png">
+							</div>
+						</div>
+						<!-- Right content block for BBS -->
+						<div class="cell-8">
+							<div class="fx" data-animate="fadeInRight">
+								<h3 class="block-head">BBS</h3>
+								<p class="hint hintMargin">Portable cybersecurity solution for small offices and home users.</p>
+								<p>
+									The <strong>OT-OCN BBS-USB-7</strong> is a portable and convenient device tailored for individuals and
+									small office environments.
+									With its <strong>impenetrable and uninterrupted cloud technology</strong>, BBS ensures comprehensive
+									protection for all connected devices.
+									This USB-based solution is designed for ease of use while delivering the same robust security benefits
+									seen in larger-scale corporate solutions.
+								</p>
+								<ul class="list alt list-ok">
+									<li class="fx" data-animate="fadeInRight">Portable USB solution for maximum convenience</li>
+									<li class="fx" data-animate="fadeInRight" data-animation-delay="200">Ideal for small office and home
+										setups</li>
+									<li class="fx" data-animate="fadeInRight" data-animation-delay="400">Provides impenetrable and
+										uninterrupted protection</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				
-				<!--
+			</div>
+			<div id="portfolio" class="sectionWrapper">
+				<div class="container">
+					<!-- AMMIT Section -->
+					<div class="row">
+						<!-- Left content block for AMMIT -->
+						<div class="cell-8">
+							<div class="fx" data-animate="fadeInLeft">
+								<h3 class="block-head">AMMIT</h3>
+								<p class="hint hintMargin">Impenetrable and uninterrupted corporate cybersecurity solution.</p>
+								<p>
+									AMMIT is a robust, standalone hardware device designed for corporate networks. It provides
+									<strong>impenetrable and uninterrupted</strong> protection, allowing businesses to operate seamlessly
+									without disruption.
+									By interfacing between corporate networks and the internet, AMMIT ensures that malicious attacks are
+									disabled without
+									compromising ongoing IT operations. This rack-mountable device supports and collaborates with existing
+									IT infrastructures,
+									making it a reliable addition to your cybersecurity toolkit.
+								</p>
+								<ul class="list alt list-ok">
+									<li class="fx" data-animate="fadeInLeft">Protects critical IT operations seamlessly</li>
+									<li class="fx" data-animate="fadeInLeft" data-animation-delay="200">Targets financial, healthcare,
+										government sectors</li>
+									<li class="fx" data-animate="fadeInLeft" data-animation-delay="400">Collaborates with existing IT
+										systems effortlessly</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Right image block for AMMIT -->
+						<div class="cell-4 fx" data-animate="flipInX">
+							<div class="padd-top-25 center">
+								<img alt="AMMIT Device" src="images/ammit.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- AMMIT end -->
+
+
+			<!-- FUN Staff start -->
+			<div class="fun-staff staff-1 block-bg-3 sectionWrapper">
+				<div class="container">
+					<!-- Staff item start -->
+					<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="200">
+						<div class="fun-number">4</div>
+						<div class="fun-text main-bg">Presence in Countries</div>
+						<div class="fun-icon"><i class="fa fa-globe"></i></div>
+					</div>
+					<!-- Staff item end -->
+
+					<!-- Staff item start -->
+					<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="400">
+						<div class="fun-number">9</div>
+						<div class="fun-text main-bg">Part of Global Hackathons</div>
+						<div class="fun-icon"><i class="fa fa-code"></i></div>
+					</div>
+					<!-- Staff item end -->
+
+					<!-- Center message -->
+					<div class="cell-4 fx" data-animate="fadeInDown">
+						<div class="fun-title extraBold">BUILDING A <span>SECURE FUTURE</span></div>
+					</div>
+					<!-- Center message end -->
+
+					<!-- Staff item start -->
+					<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="600">
+						<div class="fun-number">6</div>
+						<div class="fun-text main-bg">Projects Completed</div>
+						<div class="fun-icon"><i class="fa fa-tasks"></i></div>
+					</div>
+					<!-- Staff item end -->
+
+					<!-- Staff item start -->
+					<div class="cell-2 fx" data-animate="fadeInDown" data-animation-delay="800">
+						<div class="fun-number">12</div>
+						<div class="fun-text main-bg">Products Launched</div>
+						<div class="fun-icon"><i class="fa fa-rocket"></i></div>
+					</div>
+					<!-- Staff item end -->
+				</div><!-- .container end -->
+			</div><!-- .fun-staff end -->
+			<!-- FUN Staff end -->
+
+			<div id="Gallery" class="sectionWrapper">
+				<div class="container">
+					<div class="row">
+						<div class="cell-12 fx" data-animate="fadeInUp">
+							<h3 class="block-head center">Watch Our Video</h3>
+							<div class="video-container">
+								<iframe
+									src="https://www.youtube.com/embed/WFet2FhyThg?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&fs=0&autoplay=0&mute=0"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen>
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Portfolio Staff -->
+			<div class="sectionWrapper gry-bg">
+				<div class="container">
+					<h3 class="block-head">Gallery</h3>
+
+					<div class="portfolioGallery portfolio">
+						<!-- staff item start -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image0.png" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="CAT team as part of Seoul Korean Hackathon with other Korean Dignitaries"><b
+												class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image0.png">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">In Seoul, Korea</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<!-- staff item start -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image1.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="Mr. Bruce Khavar addressing CES 2019 in Las Vegas"><b class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image1.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">CES 2019, Las Vegas</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<!-- staff item start -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image2.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="Mr. Bruce Khavar meeting former US president, Mr. Bush"><b
+												class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image2.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">Meeting Mr. Bush</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<!-- staff item start -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image3.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="Proceeding with the business agreement of C.A.T. INC & AGBA... Preparing to be listed on NASDAQ"><b
+												class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image3.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">C.A.T. INC & AGBA</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<!-- staff item start -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image4.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="Bruce Khavar speaking on the need of digital peace"><b class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image4.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">New Delhi, India</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image5.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="Mr. Bruce Khavar receiving MK Gandhi Peace Prize winner 2019, New Delhi, India"><b
+												class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image5.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">2019, New Delhi, India</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+						<div>
+							<div class="portfolio-item">
+								<div class="img-holder">
+									<div class="img-over">
+										<a href="images/image6.jpg" class="fx zoom" data-gal="prettyPhoto[pp_gal]"
+											title="CEO Bruce Khavar featured on the cover of eForensics Magazine in 2017"><b
+												class="fa fa-search-plus"></b></a>
+									</div>
+									<img alt="" src="images/image6.jpg">
+								</div>
+								<div class="name-holder">
+									<a href="#" class="project-name">eForensics Magazine</a>
+								</div>
+							</div>
+						</div>
+						<!-- staff item end -->
+
+
+
+					</div>
+				</div>
+			</div>
+
+			<!--
 				<div class="sectionWrapper gry-bg" style="padding: 20px 0;">
 					<div class="container">
 						<div class="row">
@@ -945,15 +1045,16 @@
 					</div>
 				</div>
 			-->
-				
-				
+
+
 			<!-- Content End -->
 
 			<!-- Footer start -->
 			<footer id="footWrapper" style="background-color: #333; color: #fff; padding: 10px 0; font-size: 14px;">
 				<div class="container">
 					<div class="row">
-						<div class="cell-12" style="text-align: center; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+						<div class="cell-12"
+							style="text-align: center; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
 							<!-- Contact Information -->
 							<div>
 								<i class="fa fa-phone"></i> (510) 542-0640 &nbsp;|&nbsp;
@@ -971,69 +1072,70 @@
 			<!-- Footer end -->
 
 
-		    
+
 			<!-- Back to top Link -->
 			<div id="to-top" class="main-bg"><span class="fa fa-chevron-up"></span></div>
-		    
-	    </div>
-	    
 
-	    <!-- Load JS siles -->	
- 		<script type="text/javascript" src="js/jquery.min.js"></script>
-	    
-	    <!-- Waypoints script -->
+		</div>
+
+
+		<!-- Load JS siles -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<!-- Waypoints script -->
 		<script type="text/javascript" src="js/waypoints.min.js"></script>
-		
+
 		<!-- SLIDER REVOLUTION SCRIPTS  -->
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		
+
 		<!-- Animate numbers increment -->
 		<script type="text/javascript" src="js/jquery.animateNumber.min.js"></script>
-		
+
 		<!-- slick slider carousel -->
 		<script type="text/javascript" src="js/slick.min.js"></script>
-		
+
 		<!-- Animate numbers increment -->
 		<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-		
+
 		<!-- PrettyPhoto script -->
 		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-		
+
 		<!-- Share post plugin script -->
 		<script type="text/javascript" src="js/jquery.sharrre.min.js"></script>
-		
+
 		<!-- Product images zoom plugin -->
 		<script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
-		
+
 		<script type="text/javascript" src="js/jquery.totemticker.min.js"></script>
-		
+
 		<!-- Input placeholder plugin -->
 		<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-		
+
 		<!-- Tweeter API plugin -->
 		<script type="text/javascript" src="js/twitterfeed.js"></script>
-		
+
 		<!-- Flickr API plugin -->
 		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
 
 		<!-- MailChimp plugin -->
 		<script type="text/javascript" src="js/mailChimp.js"></script>
-		
+
 		<!-- NiceScroll plugin -->
 		<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-		
+
 		<!-- general script file -->
 		<script type="text/javascript" src="js/script.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
 		<script>
-		  // 특정 컨테이너에서만 유튜브 배경 활성화
-		  $(document).ready(function() {
-			$('.youtube-bg').youtube_background();
-		  });
+			// 특정 컨테이너에서만 유튜브 배경 활성화
+			$(document).ready(function () {
+				$('.youtube-bg').youtube_background();
+			});
 		</script>
 
-	</body>
+</body>
+
 </html>
