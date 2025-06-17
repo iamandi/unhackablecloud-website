@@ -1125,65 +1125,70 @@
 			});
 		</script>
 
+		<!-- Add this script before closing </body> tag, after your existing scripts -->
 		<script>
-			// Active Navigation Highlighter
+			// Navigation Menu Active State Handler
 			$(document).ready(function () {
-				// Get all navigation links and sections
-				const navLinks = $('.top-nav a[href^="#"]');
-				const sections = $('div[id]');
+				console.log('Navigation script loaded'); // Debug log
 
-				// Function to update active navigation item
-				function updateActiveNav() {
-					let current = '';
+				// Define your sections and their corresponding nav items
+				const sections = [
+					{id: 'home', navHref: '#home'},
+					{id: 'about', navHref: '#about'},
+					{id: 'services', navHref: '#services'},
+					{id: 'portfolio', navHref: '#portfolio'},
+					{id: 'Gallery', navHref: '#Gallery'}
+				];
+
+				function updateActiveNavigation() {
 					const scrollTop = $(window).scrollTop();
+					let activeSection = 'home'; // Default to home
 
-					// Check each section to see which one is currently visible
-					sections.each(function () {
-						const section = $(this);
-						const sectionTop = section.offset().top - 70; // Offset for fixed header
-						const sectionBottom = sectionTop + section.outerHeight();
+					// Check each section to find which one is currently in view
+					sections.forEach(function (section) {
+						const element = $('#' + section.id);
+						if (element.length > 0) {
+							const elementTop = element.offset().top - 80; // Account for fixed header
 
-						// If section is in viewport
-						if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
-							current = section.attr('id');
+							// If we're past the top of this section, make it active
+							if (scrollTop >= elementTop) {
+								activeSection = section.id;
+							}
 						}
 					});
 
-					// Special case for when we're at the very top
-					if (scrollTop < 100) {
-						current = 'home';
-					}
+					console.log('Active section:', activeSection); // Debug log
 
-					// Update navigation highlighting
-					navLinks.each(function () {
-						const link = $(this);
-						const href = link.attr('href').substring(1); // Remove the # symbol
-						const listItem = link.closest('li');
+					// Remove selected class from all navigation items
+					$('.top-nav ul li').removeClass('selected');
 
-						if (href === current) {
-							listItem.addClass('selected');
-						} else {
-							listItem.removeClass('selected');
-						}
-					});
+					// Add selected class to the current section's nav item
+					$('.top-nav ul li a[href="#' + activeSection + '"]').closest('li').addClass('selected');
 				}
 
-				// Update on scroll
+				// Update navigation on scroll
 				$(window).on('scroll', function () {
-					updateActiveNav();
+					updateActiveNavigation();
 				});
 
-				// Update on page load
-				updateActiveNav();
+				// Update navigation on page load
+				updateActiveNavigation();
 
-				// Smooth scrolling for navigation links (optional enhancement)
-				navLinks.on('click', function (e) {
+				// Handle navigation clicks with smooth scrolling
+				$('.top-nav ul li a[href^="#"]').on('click', function (e) {
 					e.preventDefault();
-					const target = $(this.getAttribute('href'));
 
-					if (target.length) {
+					const targetId = $(this).attr('href');
+					const targetElement = $(targetId);
+
+					if (targetElement.length > 0) {
+						// Remove selected from all and add to clicked item
+						$('.top-nav ul li').removeClass('selected');
+						$(this).closest('li').addClass('selected');
+
+						// Smooth scroll to target
 						$('html, body').animate({
-							scrollTop: target.offset().top - 65 // Adjust for fixed header
+							scrollTop: targetElement.offset().top - 65
 						}, 800);
 					}
 				});
