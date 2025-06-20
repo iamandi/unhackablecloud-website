@@ -85,6 +85,16 @@
 		.portfolio-item.no-border {
 			border-bottom: none;
 		}
+		
+
+		/* Just styling the content of the div, the *magic* in the previous rules */
+		.video-container .caption {
+			z-index: 1;
+			position: relative;
+			text-align: center;
+			color: #dc0000;
+			padding: 10px;
+		}
 
 		.img-holder img {
 			width: 300px;
@@ -369,11 +379,14 @@
 					</div>
 					<!-- Right image block for ANUBIS -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<!-- <div class=class="youtube-bg" data-vbg="./images/ANUBIS.mp4" data-vbg-autoplay="true" data-vbg-mute="true">
-						</div>-->
-						<div class="padd-top-25 center">
+						<div class="video-container">
+							<video autoplay muted loop width="450" height="450">
+								<source src="./images/ANUBIS.mp4" type="video/mp4" >
+							</video>
+						  </div>
+						<!-- <div class="padd-top-25 center">
 							<img alt="ANUBIS Device" src="images/anubis.png">
-						</div>
+						</div>-->
 					</div>
 				</div>
 			</div>
@@ -384,9 +397,14 @@
 				<div class="row">
 					<!-- Left image block for ALADIN Smart Wallet -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="padd-top-25 center">
-							<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">
+						<div class="video-container">
+							<video autoplay muted loop width="350" height="350">
+								<source src="./images/SPLASH SCREEN ALADIN.mp4" type="video/mp4" >
+							</video>
 						</div>
+						<!--<div class="padd-top-25 center">
+							<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">
+						</div>-->
 					</div>
 					<!-- Right content block for BBS -->
 					<div class="cell-8">
@@ -461,9 +479,14 @@
 					</div>
 					<!-- Right image block for AMMIT -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="padd-top-25 center">
-							<img alt="AMMIT Device" src="images/ammit.png">
+						<div class="video-container">
+							<video autoplay muted loop width="450" height="450">
+								<source src="./images/AMMIT SS 2.mp4" type="video/mp4" >
+							</video>
 						</div>
+						<!--<div class="padd-top-25 center">
+							<img alt="AMMIT Device" src="images/ammit.png">
+						</div>-->
 					</div>
 				</div>
 			</div>
@@ -474,9 +497,14 @@
 				<div class="row">
 					<!-- Left image block for CAT Black Hole Secure Vault -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="padd-top-25 center">
-							<img alt="CAT Black Hole Secure Vault" src="./images/BLACKHOLE.png">
+						<div class="video-container">
+							<video autoplay muted loop width="350" height="350">
+								<source src="./images/BLACK HOLE SPLASH.mp4" type="video/mp4" >
+							</video>
 						</div>
+						<!--<div class="padd-top-25 center">
+							<img alt="CAT Black Hole Secure Vault" src="./images/BLACKHOLE.png">
+						</div>-->
 					</div>
 					<!-- Right content block for CAT Black Hole Secure Vault -->
 					<div class="cell-8">
