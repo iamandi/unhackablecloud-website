@@ -379,14 +379,14 @@
 					</div>
 					<!-- Right image block for ANUBIS -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="video-container">
-							<video autoplay muted loop width="450" height="450" controls>
-								<source src="./images/ANUBIS.mp4" type="video/mp4" >
-							</video>
-						  </div>
-						<!-- <div class="padd-top-25 center">
-							<img alt="ANUBIS Device" src="images/anubis.png">
-						</div>-->
+						<div class="padd-top-25 center">
+							<!--<img alt="ANUBIS Device" src="images/anubis.png">-->
+							<div class="video-container">
+								<video id="ANUBISvideo" preload="auto" loop="loop" data-keepplaying width="450" height="450" >
+									<source src="images/ANUBIS.mp4" type="video/mp4" >
+								</video>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -397,14 +397,14 @@
 				<div class="row">
 					<!-- Left image block for ALADIN Smart Wallet -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="video-container">
-							<video autoplay muted loop width="350" height="350" controls>
-								<source src="./images/SPLASH SCREEN ALADIN.mp4" type="video/mp4" >
-							</video>
+						<div class="padd-top-25 center">
+							<!--<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">-->
+							<div class="video-container">
+								<video id="ALADINvideo" preload="auto" loop="loop" data-keepplaying width="350" height="350" >
+									<source src="images/ALADIN.mp4" type="video/mp4" >
+								</video>
+							</div>
 						</div>
-						<!--<div class="padd-top-25 center">
-							<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">
-						</div>-->
 					</div>
 					<!-- Right content block for BBS -->
 					<div class="cell-8">
@@ -479,14 +479,14 @@
 					</div>
 					<!-- Right image block for AMMIT -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="video-container">
-							<video autoplay muted loop width="450" height="450" controls>
-								<source src="./images/AMMIT SS 2.mp4" type="video/mp4" >
-							</video>
+						<div class="padd-top-25 center">
+							<!--<img alt="AMMIT Device" src="images/ammit.png">-->
+							<div class="video-container">
+								<video id="AMMITvideo" preload="auto" loop="loop" data-keepplaying width="450" height="450" >
+									<source src="images/AMMIT.mp4" type="video/mp4" >
+								</video>
+							</div>
 						</div>
-						<!--<div class="padd-top-25 center">
-							<img alt="AMMIT Device" src="images/ammit.png">
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -497,14 +497,14 @@
 				<div class="row">
 					<!-- Left image block for CAT Black Hole Secure Vault -->
 					<div class="cell-4 fx" data-animate="flipInX">
-						<div class="video-container">
-							<video autoplay muted loop width="350" height="350" controls>
-								<source src="./images/BLACK HOLE SPLASH.mp4" type="video/mp4" >
-							</video>
+						<div class="padd-top-25 center">
+							<!--<img alt="CAT Black Hole Secure Vault" src="./images/BLACKHOLE.png">-->
+							<div class="video-container">
+								<video id="BLACKHOLEvideo" preload="auto" loop="loop" data-keepplaying width="350" height="350" >
+									<source src="images/BLACK-HOLE.mp4" type="video/mp4" >
+								</video>
+							</div>
 						</div>
-						<!--<div class="padd-top-25 center">
-							<img alt="CAT Black Hole Secure Vault" src="./images/BLACKHOLE.png">
-						</div>-->
 					</div>
 					<!-- Right content block for CAT Black Hole Secure Vault -->
 					<div class="cell-8">
@@ -1352,6 +1352,20 @@
 						$('html, body').animate({
 							scrollTop: targetElement.offset().top - 65
 						}, 800);
+					}
+				});
+			});
+		</script>
+		<!--jgo add this script for video/audio auto play/pause-->
+		<script>
+			$(window).scroll(function () {
+				const viewportBottom = window.scrollY + window.innerHeight;
+
+				$('video').each(function () {
+					if ($(this).offset().top + $(this).height() < window.scrollY || $(this).offset().top > window.scrollY + window.innerHeight) {
+					$(this)[0].pause();
+					} else if ($(this).offset().top < viewportBottom) {
+					$(this)[0].play();
 					}
 				});
 			});
