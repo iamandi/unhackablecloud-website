@@ -345,7 +345,7 @@
 				<h3 class="block-head side-heading">Our Products</h3>
 				<!-- ANUBIS Section -->
 
-				<div class="row">
+				<div class="row" id="product1">
 					<!-- Left content block for ANUBIS -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInLeft">
@@ -395,9 +395,9 @@
 		<div class="sectionWrapper">
 			<div class="container">
 				<!-- ALADIN Smart Wallet Section -->
-				<div class="row">
+				<div class="row" id="product2">
 					<!-- Left image block for ALADIN Smart Wallet -->
-					<div class="cell-4 fx" data-animate="flipInX">
+					<div id="media" class="cell-4 fx" data-animate="flipInX">
 						<div class="padd-top-25 center">
 							<!--<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">-->
 							<div class="video-container">
@@ -409,7 +409,7 @@
 					</div>
 					<!-- Right content block for BBS -->
 					<div class="cell-8">
-						<div class="fx" data-animate="fadeInRight">
+						<div id="product" class="fx" data-animate="fadeInRight">
 							<h3 class="block-head">ALADIN Smart Wallet</h3>
 							<!--<p class="hint hintMargin">AI-Powered Financial Autonomy</p>-->
 							<p>
@@ -444,7 +444,7 @@
 		<div id="portfolio" class="sectionWrapper">
 			<div class="container">
 				<!-- AMMIT Section -->
-				<div class="row">
+				<div class="row" id="product3">
 					<!-- Left content block for AMMIT -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInLeft">
@@ -495,7 +495,7 @@
 		<div class="sectionWrapper">
 			<div class="container">
 				<!-- CAT Black Hole Secure Vault Section -->
-				<div class="row">
+				<div class="row" id="product4">
 					<!-- Left image block for CAT Black Hole Secure Vault -->
 					<div class="cell-4 fx" data-animate="flipInX">
 						<div class="padd-top-25 center">
@@ -1357,7 +1357,7 @@
 				});
 			});
 		</script>
-		<!--jgo add this script for video/audio auto play/pause-->
+		<!--jgo added this script for video/audio auto play/pause-->
 		<script>
 			$(window).scroll(function () {
 				const viewportBottom = window.scrollY + window.innerHeight;
@@ -1371,7 +1371,26 @@
 				});
 			});
 		</script>
-
+		<!--jgo added this script for displaying product and video sequence on cell phone-->
+		<script>
+			function adjustLayout() {
+				const displayrow = document.getElementById('product2');
+				const product = document.getElementById('product');
+				const media = document.getElementById('media');
+			
+				if (window.innerWidth < 768) {
+					// For mobile: Place itemA after itemB
+					displayrow.insertBefore(product, media.nextSibling);
+				} else {
+					// For desktop: Place itemB after itemA
+					container.insertBefore(media, product.nextSibling);
+				}
+			}
+			
+			// Initial call and on window resize
+			adjustLayout();
+			window.addEventListener('resize', adjustLayout);
+		</script>
 </body>
 
 </html>
