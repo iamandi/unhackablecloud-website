@@ -73,6 +73,8 @@
 			top: 0;
 			left: 0;
 			z-index: -1;
+			filter: blur(3px) brightness(40%);
+			transform: scale(1.1); /* Prevents white artifacts on screen edges caused by the blur */
 		}
 
 		.testimonials-1 .testimonials-key-strength {
@@ -281,20 +283,8 @@
 			<div class="tp-banner-full">
 				<ul>
 					<li data-transition="fade" data-slotamount="7">
-						<div class="youtube-bg" data-vbg="images/back.mp4" data-vbg-autoplay="true" data-vbg-mute="true">
+						<div class="youtube-bg" data-vbg="images/back.mp4" data-vbg-autoplay="true" data-vbg-mute="true" >
 						</div>
-						<!--<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
-									<source src="images/back.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>-->
-						<!--
-								<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-								<iframe frameborder="0" height="100%" width="100%" 
-									src="https://youtube.com/embed/mpgsoOuYJag?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=mpgsoOuYJag">
-								</iframe>
-								</div>
-								-->
-						<!--<img alt="" src="images/slider/dummy.png" data-lazyload="images/slider/fullscreen/bg-1.jpg">-->
 						<div class="caption lft large-title" data-x="20" data-y="20" data-speed="600" data-start="1000">
 							<ul id="vertical-ticker" class="tp-resizeme">
 								<li>AI-Governed Execution</li>
@@ -1396,6 +1386,7 @@
 			// 특정 컨테이너에서만 유튜브 배경 활성화
 			$(document).ready(function () {
 				$('.youtube-bg').youtube_background();
+				$('.youtube-bg').playbackRate = 0.5;
 			});
 		</script>
 
