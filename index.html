@@ -14,7 +14,7 @@
 	<meta property="og:title" content="CAT - Cyber Advanced Technology">
 	<meta property="og:description" content="Welcome to CAT - Redefining the Future of Cybersecurity.">
 	<meta property="og:url" content="https://unhackablecloud.com">
-	<meta property="og:image" content="https://unhackablecloud.com/images/logo.png">
+	<meta property="og:image" content="https://unhackablecloud.com/images/logo-blue.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 
@@ -22,14 +22,14 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="CAT - Cyber Advanced Technology">
 	<meta name="twitter:description" content="Welcome to CAT - Redefining the Future of Cybersecurity.">
-	<meta name="twitter:image" content="https://unhackablecloud.com/images/logo.png">
+	<meta name="twitter:image" content="https://unhackablecloud.com/images/logo-blue.png">
 
 	<!-- Put favicon.ico and apple-touch-icon(s).png in the images folder -->
 	<!--<link rel="shortcut icon" href="images/favicon.ico">-->
 
 	<!-- CSS StyleSheets -->
 	<link rel="stylesheet"
-		href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;amp;subset=latin,latin-ext">
+		href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;subset=latin,latin-ext&amp;display=swap">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css">
@@ -73,6 +73,8 @@
 			top: 0;
 			left: 0;
 			z-index: -1;
+			filter: blur(3px) brightness(40%);
+			transform: scale(1.1); /* Prevents white artifacts on screen edges caused by the blur */
 		}
 
 		.testimonials-1 .testimonials-key-strength {
@@ -106,7 +108,7 @@
 		.video-container {
 			position: relative;
 			width: 100%;
-			padding-bottom: 56.25%;
+			padding-bottom: 20%;
 			height: 0;
 			overflow: hidden;
 		}
@@ -205,6 +207,9 @@
 		}
 	</style>
 
+	<!-- CAT NeoVERSE rebrand (from CAT Home.dc.html): brand red #cf1820, announcement strip, Products dropdown, NeoVERSE catalogue, look-only fixes -->
+	<link rel="stylesheet" href="css/cat-rebrand.css">
+
 </head>
 
 <body>
@@ -214,23 +219,48 @@
 	</div>
 	<!-- site preloader end -->
 
+	<!-- Announcement strip (CAT Home.dc.html) -->
+	<div class="cat-announce">
+		<div class="container">
+			<span class="cat-announce-tag">New</span>
+			<span>The <strong>CAT NeoVERSE</strong> OT-Cloud hardware line is here — from the 1U edge node to the 7U OT-OCN Giant Unit.</span>
+			<a href="#catalogue">View Catalogue &rsaquo;</a>
+		</div>
+	</div>
+
 	<div id="headWrapper" class="clearfix">
 		<header class="top-head" data-sticky="true">
 			<div class="container">
 				<div class="row">
 					<div class="logo cell-3">
-						<a href="index.html"><img src="images/logo.png" alt="CAT - Cyber Advanced Technology"></a>
+						<a href="index.html"><img src="images/logo-blue.png" alt="CAT - Cyber Advanced Technology"></a>
 					</div>
 					<div class="cell-9 top-menu">
 						<!-- Top navigation menu start -->
 						<nav class="top-nav mega-menu">
 							<ul>
 								<!-- Navigation links -->
-								<li class="selected"><a href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
-								<li><a href="#about"><i class="fa fa-user"></i><span>About</span></a></li>
-								<li><a href="#services"><i class="fa fa-cogs"></i><span>Why CAT</span></a></li>
-								<li><a href="#portfolio"><i class="fa fa-image"></i><span>Products</span></a></li>
-								<li><a href="#Gallery"><i class="fa fa-clone"></i><span>Gallery</span></a></li>
+								<li class="selected"><a href="#home"><i class="fa fa-home"></i><span><strong>Home</strong></span></a></li>
+								<li><a href="#about"><i class="fa fa-user"></i><span><strong>About</strong></span></a></li>
+								<li><a href="#services"><i class="fa fa-cogs"></i><span><strong>Why CAT</strong></span></a></li>
+								<li class="hasChildren cat-products"><a href="#portfolio"><i class="fa fa-server"></i><span><strong>Products </strong><i class="fa fa-angle-down"></i></span></a>
+										<ul>
+											<li class="nav-group">Flagship Systems</li>
+											<li><a href="#anubis"><span>ANUBIS</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="#aladin"><span>ALADIN Smart Wallet</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="#ammit"><span>AMMIT</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="#blackhole"><span>CAT Black Hole Secure Vault</span><i class="fa fa-angle-right"></i></a></li>
+											<li class="nav-group">CAT NeoVERSE · OT-Cloud</li>
+											<li><a href="product-1u.html"><span><strong>1U</strong> · Vortex OT-Cloud Edge Node</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="product-2u.html"><span><strong>2U</strong> · Vortex OT-Cloud System</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="product-3u.html"><span><strong>3U</strong> · MicroCloud OT-Cluster</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="product-4u.html"><span><strong>4U</strong> · Vortex OT-Cloud AI System</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="product-full-rack.html"><span><strong>Full Rack</strong> · Micro-OT-Cloud Cluster</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="product-7u.html"><span><strong>7U</strong> · OT-OCN Giant Unit</span><i class="fa fa-angle-right"></i></a></li>
+											<li><a href="#catalogue" class="nav-viewall">View full catalogue &rsaquo;</a></li>
+										</ul>
+									</li>
+								<li><a href="#Gallery"><i class="fa fa-clone"></i><span><strong>Gallery</strong></span></a></li>
 							</ul>
 						</nav>
 						<!-- Top navigation menu end -->
@@ -253,20 +283,8 @@
 			<div class="tp-banner-full">
 				<ul>
 					<li data-transition="fade" data-slotamount="7">
-						<div class="youtube-bg" data-vbg="images/back.mp4" data-vbg-autoplay="true" data-vbg-mute="true">
+						<div class="youtube-bg" data-vbg="images/back.mp4" data-vbg-autoplay="true" data-vbg-mute="true" >
 						</div>
-						<!--<video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
-									<source src="images/back.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>-->
-						<!--
-								<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-								<iframe frameborder="0" height="100%" width="100%" 
-									src="https://youtube.com/embed/mpgsoOuYJag?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=mpgsoOuYJag">
-								</iframe>
-								</div>
-								-->
-						<!--<img alt="" src="images/slider/dummy.png" data-lazyload="images/slider/fullscreen/bg-1.jpg">-->
 						<div class="caption lft large-title" data-x="20" data-y="20" data-speed="600" data-start="1000">
 							<ul id="vertical-ticker" class="tp-resizeme">
 								<li>AI-Governed Execution</li>
@@ -333,9 +351,9 @@
 						</em>
 					</p>
 				</div>
-				<!--div class="signature" style="margin-top: 40px; text-align: left;">
-					<img src="images/sign.png" alt="The CAT Team" style="max-width: 300px; height: auto;">
-				</div-->
+				<div class="signature" style="margin-top: 40px; text-align: left;">
+					<!-- CAT Team signature image removed per the design (CAT Home.dc.html) -->
+				</div>
 			</div>
 		</div>
 		
@@ -349,7 +367,7 @@
 					<!-- Left content block for ANUBIS -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInLeft">
-							<h3 class="block-head">ANUBIS</h3>
+							<h3 class="block-head" id="anubis"><strong>ANUBIS</strong></h3>
 							<!--<p class="hint hintMargin">The AI Immune Infrastructure Node</p>-->
 							<p>
 								ANUBIS is an AI-secured, high-performance system core built for mission-critical operations. 
@@ -383,7 +401,7 @@
 						<div class="padd-top-25 center"> 
 							<!--<img alt="ANUBIS Device" src="images/anubis.png">-->
 							<div class="video-container">
-								<video id="ANUBISvideo" preload="auto" loop="loop" width="350" height="350" style="object-fit: cover;" >
+								<video id="ANUBISvideo" preload="none" loop="loop" width="350" height="350" style="object-fit: cover;" >
 									<source src="images/ANUBIS.mp4" type="video/mp4" >
 								</video>
 							</div>
@@ -401,7 +419,7 @@
 						<div class="padd-top-25 center">
 							<!--<img alt="ALADIN Smart Wallet" src="images/bbs-firecat.png">-->
 							<div class="video-container">
-								<video id="ALADINvideo" preload="auto" loop="loop" width="350" height="350" style="object-fit: cover;">
+								<video id="ALADINvideo" preload="none" loop="loop" width="350" height="350" style="object-fit: cover;">
 									<source src="images/ALADIN.mp4" type="video/mp4" >
 								</video>
 							</div>
@@ -410,7 +428,7 @@
 					<!-- Right content block for BBS -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInRight">
-							<h3 class="block-head">ALADIN Smart Wallet</h3>
+							<h3 class="block-head" id="aladin"><strong>ALADIN Smart Wallet</strong></h3>
 							<!--<p class="hint hintMargin">AI-Powered Financial Autonomy</p>-->
 							<p>
 								ALADIN the world’s first AI-enabled wallet built for the QCAT infrastructure and powered by CAT AI-ONE. 
@@ -419,7 +437,7 @@
 								all with sub-second performance on WebChain.
 							</p>
 							<p>
-								<strong>Key Features</strong>>
+								<strong>Key Features</strong>
 							</p>
 							<ul class="list alt list-ok">
 								<li class="fx" data-animate="fadeInLeft"><Strong>AI-Driven Protection: </Strong>
@@ -448,7 +466,7 @@
 					<!-- Left content block for AMMIT -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInLeft">
-							<h3 class="block-head">AMMIT</h3>
+							<h3 class="block-head" id="ammit"><strong>AMMIT</strong></h3>
 							<!--<p class="hint hintMargin">Decentralized Intelligence at the Edge</p>-->
 							<p>
 								AMMIT is a compact, AI-powered OT device built for edge operations that demand immunity, speed, 
@@ -473,7 +491,7 @@
 									High-speed mesh networking and inter-device sync through OT-OCN.</li>
 								<li class="fx" data-animate="fadeInLeft" data-animation-delay="600"><Strong>Compact & Powerful: </Strong>
 									10x10cm form factor with 8–32GB RAM and up to 2TB encrypted SSD.</li>
-								<li class="fx" data-animate="fadeInLeft" data-animation-delay="800"><Strong>DePIN & NATILUS Ready: </Strong>
+								<li class="fx" data-animate="fadeInLeft" data-animation-delay="800"><Strong>DePIN & NAUTILUS Ready: </Strong>
 									Built for decentralized infrastructure and future spiral upgrades.</li>	
 							</ul>
 						</div>
@@ -483,7 +501,7 @@
 						<div class="padd-top-25 center">
 							<!--<img alt="AMMIT Device" src="images/ammit.png">-->
 							<div class="video-container">
-								<video id="AMMITvideo" preload="auto" loop="loop" width="350" height="350" style="object-fit: cover;" >
+								<video id="AMMITvideo" preload="none" loop="loop" width="350" height="350" style="object-fit: cover;" >
 									<source src="images/AMMIT.mp4" type="video/mp4" >
 								</video>
 							</div>
@@ -493,7 +511,7 @@
 			</div>
 		</div>
 		<div class="sectionWrapper">
-			<div class="container">
+			<div class="container" >
 				<!-- CAT Black Hole Secure Vault Section -->
 				<div class="row">
 					<!-- Left image block for CAT Black Hole Secure Vault -->
@@ -501,7 +519,7 @@
 						<div class="padd-top-25 center">
 							<!--<img alt="CAT Black Hole Secure Vault" src="./images/BLACKHOLE.png">-->
 							<div class="video-container">
-								<video id="BLACKHOLEvideo" preload="auto" loop="loop" width="350" height="350" style="object-fit: cover;" >
+								<video id="BLACKHOLEvideo" preload="none" loop="loop" width="350" height="350" style="object-fit: cover;" >
 									<source src="images/BLACK-HOLE.mp4" type="video/mp4" >
 								</video>
 							</div>
@@ -510,7 +528,7 @@
 					<!-- Right content block for CAT Black Hole Secure Vault -->
 					<div class="cell-8">
 						<div class="fx" data-animate="fadeInRight">
-							<h3 class="block-head">CAT Black Hole Secure Vault</h3>
+							<h3 class="block-head" id="blackhole"><strong>CAT Black Hole Secure Vault</strong></h3>
 							<!--<p class="hint hintMargin">AI-Powered Financial Autonomy</p>-->
 							<p>
 								The CAT Black Hole Secure Vault is a next-generation cybersecurity core that renders your internal 
@@ -521,7 +539,7 @@
 								and sovereign data systems.
 							</p>
 							<p>
-								<strong>Key Features</strong>>
+								<strong>Key Features</strong>
 							</p>
 							<ul class="list alt list-ok">
 								<li class="fx" data-animate="fadeInLeft"><Strong>Zero Visibility Architecture: </Strong>
@@ -543,6 +561,88 @@
 			</div>
 		</div>
 		<!-- CAT product section end -->
+
+		<!-- CAT NeoVERSE catalogue (CAT Home.dc.html) -->
+		<section id="catalogue">
+			<!-- banner band -->
+			<div class="neo-banner">
+				<div class="container">
+					<img src="images/neoverse/neoverse-badge.png" alt="CAT NeoVERSE — OT-OCN. Built for the future. Ready for today.">
+					<p>The Vortex OT-Cloud hardware line — from a single 1U edge node to the 7U OT-OCN Giant Unit. Every system runs the OT-OCN fabric with immune-grade security built in, not bolted on.</p>
+					<div class="neo-tagline">Sovereign <span>·</span> Intelligent <span>·</span> Secure <span>·</span> Connected</div>
+				</div>
+			</div>
+			<!-- grid band -->
+			<div class="neo-grid-band sectionWrapper">
+				<div class="container">
+					<div class="neo-eyebrow"><span></span>CAT NeoVERSE · Vortex OT-Cloud</div>
+					<h2 class="neo-h2">Product Catalogue</h2>
+					<p class="neo-sub">Choose your form factor. Every unit ships with a full datasheet — download the PDF from any product page.</p>
+					<div class="neo-cards">
+						<a class="neo-card" href="product-1u.html">
+							<div class="neo-card-img"><span class="neo-u">1U</span><img src="images/neoverse/1u-main.png" alt="1U Vortex OT-Cloud Edge Node"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · Vortex OT-Cloud</div>
+								<h4>Vortex OT-Cloud Edge Node</h4>
+								<div class="neo-code">ARS-121L-NE316R</div>
+								<p>A dual-processor edge node bridging the OT-Edge to the Secure OT-Cloud.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+						<a class="neo-card" href="product-2u.html">
+							<div class="neo-card-img"><span class="neo-u">2U</span><img src="images/neoverse/2u-main.png" alt="2U Vortex OT-Cloud System"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · Vortex OT-Cloud</div>
+								<h4>Vortex OT-Cloud System</h4>
+								<div class="neo-code">NEO-2U-X6700</div>
+								<p>A quad-Xeon OT-Cloud system with GPU acceleration and 24 NVMe bays.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+						<a class="neo-card" href="product-3u.html">
+							<div class="neo-card-img"><span class="neo-u">3U</span><img src="images/neoverse/3u-microcloud.png" alt="3U MicroCloud OT-Cluster"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · Vortex OT-Cloud</div>
+								<h4>MicroCloud OT-Cluster</h4>
+								<div class="neo-code">SYS-531MC-H8TNR</div>
+								<p>An 8-node Micro-Cloud cluster distributing OT-Cloud services in a single 3U chassis.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+						<a class="neo-card" href="product-4u.html">
+							<div class="neo-card-img"><span class="neo-u">4U</span><img src="images/neoverse/4u-main.png" alt="4U Vortex OT-Cloud AI System"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · Vortex OT-Cloud</div>
+								<h4>Vortex OT-Cloud AI System</h4>
+								<div class="neo-code">NEO-4U-X6700-AI</div>
+								<p>A quad-processor, quad-GPU flagship for OT-Cloud AI at the core.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+						<a class="neo-card" href="product-full-rack.html">
+							<div class="neo-card-img"><span class="neo-u">Full Rack</span><img src="images/neoverse/grace-hopper-1u.png" alt="Full Rack Micro-OT-Cloud Cluster"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · Vortex OT-Cloud</div>
+								<h4>Micro-OT-Cloud Cluster</h4>
+								<div class="neo-code">NEO-RACK-31U</div>
+								<p>A composed sovereign rack — cluster compute, Pentascale storage and Grace-Hopper AI.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+						<a class="neo-card" href="product-7u.html">
+							<div class="neo-card-img neo-card-img--dark"><span class="neo-u">7U</span><img src="images/neoverse/neoverse-banner-7u.png" alt="7U NeoVERSE OT-OCN Giant Unit"></div>
+							<div class="neo-card-body">
+								<div class="neo-card-line">CAT NeoVERSE · OT-OCN</div>
+								<h4>NeoVERSE OT-OCN Giant Unit</h4>
+								<div class="neo-code">NEO-7U-RQC</div>
+								<p>The flagship OT-OCN appliance — the sovereign network core, built for billions of devices.</p>
+								<div class="neo-card-foot"><span class="neo-view">View product <i class="fa fa-arrow-right"></i></span><span class="neo-pdf"><i class="fa fa-file-pdf-o"></i> PDF</span></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- mov slider start -->
 		<div id="intro" class="sectionWrapper" style="padding-top: 40px;">
 			<!-- mov slider end -->
@@ -619,7 +719,7 @@
 									style="width: 150px; height: 150px; margin-bottom: 20px;">
 								<h3><span>Spiral Innovation</span><br>NAUTILUS</h3>
 								<p>
-									NATILUS is our internal framework for continuous spiral development, where every 4–6 month cycle delivers 
+									NAUTILUS is our internal framework for continuous spiral development, where every 4–6 month cycle delivers 
 									a market-ready, revenue-generating product, while 2–3 advanced generations remain strategically in reserve. 
 									This model ensures we stay ahead — not just reactive, but anticipatory. 
 								</p>
@@ -648,7 +748,7 @@
 									<!-- Unique Feature 1 -->
 									<div>
 										<div class="testimonials-bg">
-											<img alt="" src="images/icons/innovation.png" class="testimonials-img">
+											<i class="fa fa-lightbulb-o testimonials-img cat-uniq-ico" aria-hidden="true"></i>
 											<span><strong>Innovation at the Core:</strong> We have pioneered OT-OCN architecture to redefine
 												the
 												future of secure, scalable networks.</span>
@@ -661,7 +761,7 @@
 									<!-- Unique Feature 2 -->
 									<div>
 										<div class="testimonials-bg">
-											<img alt="" src="images/icons/security.png" class="testimonials-img">
+											<i class="fa fa-shield testimonials-img cat-uniq-ico" aria-hidden="true"></i>
 											<span><strong>Unmatched Security:</strong> Our solutions ensure end-to-end data protection,
 												safeguarding critical systems from cyber threats.</span>
 										</div>
@@ -673,7 +773,7 @@
 									<!-- Unique Feature 3 -->
 									<div>
 										<div class="testimonials-bg">
-											<img alt="" src="images/icons/customization.png" class="testimonials-img">
+											<i class="fa fa-cogs testimonials-img cat-uniq-ico" aria-hidden="true"></i>
 											<span><strong>Tailored Solutions:</strong> From government projects to enterprise solutions, we
 												deliver personalized technologies for diverse industries.</span>
 										</div>
@@ -685,7 +785,7 @@
 									<!-- Unique Feature 4 -->
 									<div>
 										<div class="testimonials-bg">
-											<img alt="" src="images/icons/support.png" class="testimonials-img">
+											<i class="fa fa-life-ring testimonials-img cat-uniq-ico" aria-hidden="true"></i>
 											<span><strong>Comprehensive Support:</strong> Our team offers seamless integration and exceptional
 												post-implementation support.</span>
 										</div>
@@ -791,7 +891,7 @@
 								<!-- Feature 4 -->
 								<div class="portfolio-item no-border">
 									<div class="img-holder">
-										<i class="fa fa-lightbulb-o rotating-icon" style="font-size: 50px; color: #610706;"></i>
+										<i class="fa fa-lightbulb-o rotating-icon" style="font-size: 50px; color: #cf1820;"></i>
 									</div>
 									<div class="name-holder">
 										<h4>4. Paradigm Shift</h4>
@@ -803,7 +903,7 @@
 								<!-- Feature 5 -->
 								<div class="portfolio-item no-border">
 									<div class="img-holder">
-										<i class="fa fa-clock-o rotating-icon" style="font-size: 50px; color: #610706;"></i>
+										<i class="fa fa-clock-o rotating-icon" style="font-size: 50px; color: #cf1820;"></i>
 									</div>
 									<div class="name-holder">
 										<h4>5. Real Time</h4>
@@ -815,7 +915,7 @@
 								<!-- Feature 6 -->
 								<div class="portfolio-item no-border">
 									<div class="img-holder">
-										<i class="fa fa-shield rotating-icon" style="font-size: 50px; color: #610706;"></i>
+										<i class="fa fa-shield rotating-icon" style="font-size: 50px; color: #cf1820;"></i>
 									</div>
 									<div class="name-holder">
 										<h4>6. Intrusion Prevention</h4>
@@ -827,7 +927,7 @@
 								<!-- Feature 7 -->
 								<div class="portfolio-item no-border">
 									<div class="img-holder">
-										<i class="fa fa-link rotating-icon" style="font-size: 50px; color: #610706;"></i>
+										<i class="fa fa-link rotating-icon" style="font-size: 50px; color: #cf1820;"></i>
 									</div>
 									<div class="name-holder">
 										<h4>7. End-to-End Security</h4>
@@ -839,7 +939,7 @@
 								<!-- Feature 8 -->
 								<div class="portfolio-item no-border">
 									<div class="img-holder">
-										<i class="fa fa-bitcoin rotating-icon" style="font-size: 50px; color: #610706;"></i>
+										<i class="fa fa-bitcoin rotating-icon" style="font-size: 50px; color: #cf1820;"></i>
 									</div>
 									<div class="name-holder">
 										<h4>8. Blockchain Ready</h4>
@@ -1266,7 +1366,7 @@
 		<script type="text/javascript" src="js/jquery.placeholder.js"></script>
 
 		<!-- Tweeter API plugin -->
-		<script type="text/javascript" src="js/twitterfeed.js"></script>
+		<!-- twitterfeed removed: unused, and it called a nonexistent php/get-tweets.php (we don't use PHP) -->
 
 		<!-- Flickr API plugin -->
 		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
@@ -1286,6 +1386,7 @@
 			// 특정 컨테이너에서만 유튜브 배경 활성화
 			$(document).ready(function () {
 				$('.youtube-bg').youtube_background();
+				$('.youtube-bg').playbackRate = 0.5;
 			});
 		</script>
 
@@ -1301,6 +1402,7 @@
 					{id: 'about', navHref: '#about'},
 					{id: 'services', navHref: '#services'},
 					{id: 'portfolio', navHref: '#portfolio'},
+						{id: 'catalogue', navHref: '#portfolio'},
 					{id: 'Gallery', navHref: '#Gallery'}
 				];
 
@@ -1367,7 +1469,7 @@
 					if ($(this).offset().top + $(this).height() < window.scrollY || $(this).offset().top > window.scrollY + window.innerHeight) {
 					$(this)[0].pause();
 					} else if ($(this).offset().top < viewportBottom) {
-					$(this)[0].play();
+					{ const _p = $(this)[0].play(); if (_p && _p.catch) { _p.catch(function () {}); } }
 					}
 				});
 			});
