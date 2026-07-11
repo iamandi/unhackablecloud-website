@@ -1,5 +1,5 @@
-		/*:root{--cat-accent:#cf1820;--cat-accent-dark:#a81015;--cat-ember:#d23c1a;--cat-ink:#14161a;}*/
-		:root{--cat-accent:#185ad6;--cat-accent-dark:#1b035e;--cat-ember:#d23c1a;--cat-ink:#14161a;}
+		/*:root{--cat-accent:#cf1820;--cat-accent-dark:#a81015;--cat-ember:#d23c1a;--cat-ink:#14161a;}*/ 
+		:root{--cat-accent:#0072ce;--cat-accent-dark:#1b035e;--cat-ember:#d23c1a;--cat-ink:#14161a;}/*#185ad6*/
 		html{scroll-padding-top:118px;}
 		#anubis,#aladin,#ammit,#blackhole,#catalogue{scroll-margin-top:118px;}
 		/* keep the Products dropdown above the hero */
